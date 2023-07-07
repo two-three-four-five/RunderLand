@@ -1,6 +1,6 @@
 public class GPXLogger : MonoBehaviour
 {
-    List<GPSData>       gpsDataList = new List<GPSData>;
+    List<GPSData>       track = new List<GPSData>;
     public GameObject   GPSModule;
 
     private void Start()
@@ -19,6 +19,6 @@ public class GPXLogger : MonoBehaviour
         double altitude = GPSModule.GetComponent<altitude>;
 
         GPSData gpsData = new GPS(latitude, longitude, altitude);
-        gpsDataList.Add(gpsData);
+        track.Add(gpsData);
     }
 }
