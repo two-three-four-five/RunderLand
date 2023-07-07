@@ -11,37 +11,17 @@ public class GPXLogger : MonoBehaviour
     // Time interval between each GPS update
     public float updateInterval = 1f;
 
+    // GPSModule to get gps information
+    public GameObject   GPSModule;
+
     private IEnumerator Start()
     {
-        // Enable GPS
-        if (!Input.location.isEnabledByUser)
-        {
-            Debug.Log("GPS is not enabled on the device.");
-            yield break;
-        }
-
-        // Start GPS
-        Input.location.Start();
-
-        // Wait until the GPS service initializes
-        while (Input.location.status == LocationServiceStatus.Initializing)
-        {
-            yield return new WaitForSeconds(0.5f);
-        }
-
-        // Check if GPS initialization failed
-        if (Input.location.status == LocationServiceStatus.Failed)
-        {
-            Debug.Log("Failed to initialize GPS.");
-            yield break;
-        }
-
         // Continuously log GPS data
         while (true)
         {
-            double latitude = Input.location.lastData.latitude;
-            double longitude = Input.location.lastData.longitude;
-            double altitude = Input.location.lastData.altitude;
+            double latitude = GPSModule.GetComponent<latitude>;
+            double longitude = GPSModule.GetComponent<longitude>;
+            double altitude = GPSModule.GetComponent<altitude>;
 
             // Append track point to GPX file
             if (!System.IO.File.Exists(gpxFilePath))

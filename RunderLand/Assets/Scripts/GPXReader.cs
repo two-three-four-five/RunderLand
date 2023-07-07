@@ -5,26 +5,26 @@ using UnityEngine;
 public class GPXReader : MonoBehaviour
 {
     // File path of the GPX file to read
-    public string gpxFilePath = "path/to/your/file.gpx";
-
+    public string       gpxFilePath = "log.gpx";
+    
     private void Start()
     {
         // Read and parse the GPX file
-        List<GPXData> gpxDataList = ReadGPXFile(gpxFilePath);
+        List<GPSData> gpsDataList = ReadGPXFile(gpxFilePath);
 
         // Display the extracted GPS data
-        foreach (GPXData gpxData in gpxDataList)
+        foreach (GPSData gpsData in gpsDataList)
         {
-            Debug.Log("Latitude: " + gpxData.latitude);
-            Debug.Log("Longitude: " + gpxData.longitude);
-            Debug.Log("Altitude: " + gpxData.altitude);
+            Debug.Log("Latitude: " + gpsData.latitude);
+            Debug.Log("Longitude: " + gpsData.longitude);
+            Debug.Log("Altitude: " + gpsData.altitude);
             Debug.Log("----------------------");
         }
     }
 
-    private List<GPXData> ReadGPXFile(string filePath)
+    private List<GPSData> ReadGPXFile(string filePath)
     {
-        List<GPXData> gpxDataList = new List<GPXData>();
+        List<GPSData> gpsDataList = new List<GPSData>();
 
         XmlDocument doc = new XmlDocument();
         doc.Load(filePath);
@@ -37,24 +37,10 @@ public class GPXReader : MonoBehaviour
             double longitude = double.Parse(trackPoint.Attributes["lon"].Value);
             double altitude = double.Parse(trackPoint.SelectSingleNode("ele").InnerText);
 
-            GPXData gpxData = new GPXData(latitude, longitude, altitude);
-            gpxDataList.Add(gpxData);
+            GPSData gpsData = new GPSData(latitude, longitude, altitude);
+            gpsDataList.Add(gpsData);
         }
 
-        return gpxDataList;
-    }
-}
-
-public class GPXData
-{
-    public double latitude;
-    public double longitude;
-    public double altitude;
-
-    public GPXData(double latitude, double longitude, double altitude)
-    {
-        this.latitude = latitude;
-        this.longitude = longitude;
-        this.altitude = altitude;
+        return gpsDataList;
     }
 }
