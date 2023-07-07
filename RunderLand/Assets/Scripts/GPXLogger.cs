@@ -1,11 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using System.IO;
 using System.Xml;
 
 public class GPXLogger : MonoBehaviour
 {
     // File path of the existing GPX file
-    public string gpxFilePath = "tracker.gpx";
+    public string gpxFilePath = "log.gpx";
 
     // Time interval between each GPS update
     public float updateInterval = 1f;
@@ -43,7 +44,7 @@ public class GPXLogger : MonoBehaviour
             double altitude = Input.location.lastData.altitude;
 
             // Append track point to GPX file
-            if (!File.Exists(gpxFilePath))
+            if (!System.IO.File.Exists(gpxFilePath))
                 CreateGPXFile(latitude, longitude, altitude);
             else
                 AppendTrackPointToGPXFile(latitude, longitude, altitude);
