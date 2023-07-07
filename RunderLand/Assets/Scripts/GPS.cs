@@ -4,6 +4,8 @@ using System.Collections;
 
 public class GPS : MonoBehaviour
 {
+    public float latitude;
+    public float longitude;
 	public Text	statusText;
     public Text latitudeText;
     public Text longitudeText;
@@ -58,6 +60,8 @@ public class GPS : MonoBehaviour
 
             // 위도와 경도 텍스트 업데이트
 			gps_connect++;
+            latitude = currentGPSPosition.latitude;
+            longitude = currentGPSPosition.longitude;
             latitudeText.text =  currentGPSPosition.latitude.ToString();
             longitudeText.text = currentGPSPosition.longitude.ToString();
 			statusText.text = (Input.location.status == LocationServiceStatus.Running ? "run" : "not run") + gps_connect.ToString();
