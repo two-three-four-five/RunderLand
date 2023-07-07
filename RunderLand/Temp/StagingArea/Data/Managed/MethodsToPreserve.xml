@@ -1,0 +1,102 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="Qualcomm.Snapdragon.Spaces.Samples.CanvasControllerCompanion">
+			<method name="Quit"/>
+			<method name="Quit"/>
+		</type>
+		<type fullname="Qualcomm.Snapdragon.Spaces.Samples.CubeManipulation">
+			<method name="PlaceCube"/>
+			<method name="PlaceCube"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="SetColor"/>
+			<method name="UpdateRotation"/>
+			<method name="UpdateRotation"/>
+			<method name="UpdateVisibility"/>
+			<method name="UpdateVisibility"/>
+			<method name="UpdateVisibility"/>
+		</type>
+		<type fullname="Qualcomm.Snapdragon.Spaces.Samples.DynamicOpenXRLoader">
+			<method name="SetOpenXREnabledBasedOnToggle"/>
+		</type>
+		<type fullname="Qualcomm.Snapdragon.Spaces.Samples.Lifecycle">
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="LoadSceneByName"/>
+			<method name="Quit"/>
+			<method name="Quit"/>
+			<method name="Quit"/>
+			<method name="ReloadScene"/>
+			<method name="ToggleObjectVisibility"/>
+			<method name="ToggleObjectVisibility"/>
+		</type>
+	</assembly>
+	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
+		<type fullname="TMPro.TMP_Text">
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.Behaviour">
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
+		</type>
+		<type fullname="UnityEngine.GameObject">
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+			<method name="SetActive"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.UI" ignoreIfMissing="1">
+		<type fullname="UnityEngine.UI.Selectable">
+			<method name="set_interactable"/>
+			<method name="set_interactable"/>
+			<method name="set_interactable"/>
+			<method name="set_interactable"/>
+		</type>
+		<type fullname="UnityEngine.UI.Toggle">
+			<method name="SetIsOnWithoutNotify"/>
+			<method name="SetIsOnWithoutNotify"/>
+		</type>
+	</assembly>
+</linker>

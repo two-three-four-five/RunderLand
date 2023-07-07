@@ -5,8 +5,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation(name: 'libopenxr_loader', ext:'aar')
     implementation(name: 'SpacesServicesHelper', ext:'aar')
-    implementation(name: 'SpacesCustomLauncher', ext:'aar')
-    implementation(name: 'SpacesHostController', ext:'aar')
 
 }
 

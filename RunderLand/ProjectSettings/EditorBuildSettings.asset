@@ -7,12 +7,12 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Samples/Snapdragon Spaces Dual Render Fusion (Experimental)/0.14.0/Fusion
-      Samples/Scenes/OpenXRLoadingTest.unity
-    guid: 5c1ef0967f588c34db1f88c7ec1271cb
-  - enabled: 1
-    path: Assets/Samples/Snapdragon Spaces Dual Render Fusion (Experimental)/0.14.0/Fusion
       Samples/Scenes/PortraitUISampleScene.unity
     guid: c14207df34b75c249ad492b04dc3886d
+  - enabled: 1
+    path: Assets/Samples/Snapdragon Spaces Dual Render Fusion (Experimental)/0.14.0/Fusion
+      Samples/Scenes/OpenXRLoadingTest.unity
+    guid: 5c1ef0967f588c34db1f88c7ec1271cb
   - enabled: 1
     path: Assets/Samples/Snapdragon Spaces Dual Render Fusion (Experimental)/0.14.0/Fusion
       Samples/Scenes/ControllerPrefabSampleScene.unity

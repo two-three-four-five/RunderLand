@@ -126,7 +126,6 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
     // Trim Memory Unity
     @Override public void onTrimMemory(int level)
     {
-        android.os.PowerManager _pm = (android.os.PowerManager) getSystemService(android.content.Context.POWER_SERVICE);if (!_pm.isInteractive()) return; if (level == TRIM_MEMORY_UI_HIDDEN) finish();
         super.onTrimMemory(level);
         if (level == TRIM_MEMORY_RUNNING_CRITICAL)
         {
@@ -144,7 +143,6 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
     // Notify Unity of the focus change.
     @Override public void onWindowFocusChanged(boolean hasFocus)
     {
-        if (!hasFocus) return;
         super.onWindowFocusChanged(hasFocus);
         mUnityPlayer.windowFocusChanged(hasFocus);
     }
