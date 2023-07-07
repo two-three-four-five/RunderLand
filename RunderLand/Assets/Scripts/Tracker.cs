@@ -2,13 +2,14 @@ public class GPXLogger : MonoBehaviour
 {
     List<GPSData>       track = new List<GPSData>;
     public GameObject   GPSModule;
+    public float        trackingInterval = 1f;
 
-    private void Start()
+    private IEnumerator Start()
     {
         while (1)
         {
             AddTrackPointPoint();
-            sleep(1);
+            yield return new WaitForSeconds(trackingInterval);
         }
     }
 
