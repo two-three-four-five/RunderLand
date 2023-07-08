@@ -1,4 +1,0 @@
-repository "RunderLand@DandyDay@cloud"
-  path "/"
-    smartbranch "/main/develop" 
-     
