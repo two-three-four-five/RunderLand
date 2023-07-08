@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "packages": {
+    "com.qualcomm.snapdragon.spaces": {
+      "tarball": {
+        "hash": "4b7d4db66c6c",
+        "mtime": 1686117488000,
+        "size": 9432153,
+        "localPath": "/Users/jinho/Github/RunderLand/SDK/Snapdragon_Spaces_SDK_0_14_0_for_Unity/Unity Package/com.qualcomm.snapdragon.spaces-0.14.0.tgz"
+      }
+    },
+    "com.qualcomm.snapdragon.spaces.fusion": {
+      "tarball": {
+        "hash": "8f8ccb2e6827",
+        "mtime": 1685446418000,
+        "size": 445824,
+        "localPath": "/Users/jinho/Github/RunderLand/SDK/Snapdragon_Spaces_Fusion_Package_0_14_0/com.qualcomm.snapdragon.spaces.fusion_0_14_0.tgz"
+      }
+    }
+  }
+}
