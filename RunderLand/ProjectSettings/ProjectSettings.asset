@@ -804,11 +804,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: 6c281a1e-fef7-47c2-8873-71072de65d8a
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: RunderLand
+  organizationId: twothreefourfive
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
