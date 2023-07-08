@@ -346,10 +346,10 @@ MonoBehaviour:
   priority: 0
   required: 1
   CheckInstalledRuntime: 1
-  LaunchAppOnViewer: 1
+  LaunchAppOnViewer: 0
   PreventSleepMode: 1
   ShowLaunchMessageOnHost: 0
-  LaunchControllerOnHost: 1
+  LaunchControllerOnHost: 0
   UseCustomController: 0
   ExportHeadless: 0
   AlternateStartActivity: 
