@@ -16,9 +16,10 @@ public class Map : MonoBehaviour
 
     private void AddTrackPoint()
     {
-        double latitude = GPSModule.GetComponent<latitude>;
-        double longitude = GPSModule.GetComponent<longitude>;
-        double altitude = GPSModule.GetComponent<altitude>;
+            float latitude = GPSModule.GetComponent<GPS>.latitude;
+            float longitude = GPSModule.GetComponent<GPS>.longitude;
+            // float altitude = GPSModule.GetComponent<GPS>.altitude;
+            float altitude = 0;
 
         GPSData gpsData = new GPS(latitude, longitude, altitude);
         map.Add(gpsData);
