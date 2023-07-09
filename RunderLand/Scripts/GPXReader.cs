@@ -6,21 +6,6 @@ public class GPXReader : MonoBehaviour
 {
     // File path of the GPX file to read
     public string       gpxFilePath = "log.gpx";
-    
-    private void Start()
-    {
-        // Read and parse the GPX file
-        List<GPSData> gpsDataList = ReadGPXFile(gpxFilePath);
-
-        // Display the extracted GPS data
-        foreach (GPSData gpsData in gpsDataList)
-        {
-            Debug.Log("Latitude: " + gpsData.latitude);
-            Debug.Log("Longitude: " + gpsData.longitude);
-            Debug.Log("Altitude: " + gpsData.altitude);
-            Debug.Log("----------------------");
-        }
-    }
 
     private List<GPSData> ReadGPXFile(string filePath)
     {
