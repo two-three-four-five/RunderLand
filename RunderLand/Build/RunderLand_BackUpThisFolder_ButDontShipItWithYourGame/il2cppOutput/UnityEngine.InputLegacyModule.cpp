@@ -916,10 +916,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Gyroscope_getEnabled_Internal_m69827470009782D6CC88AA7F9EEAC66A3E5C3BCE (int32_t ___0_idx, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Gyroscope::setEnabled_Internal(System.Int32,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gyroscope_setEnabled_Internal_mBA928BFDE5565840E372846AF9E0D0E45AD7D115 (int32_t ___0_idx, bool ___1_enabled, const RuntimeMethod* method) ;
-// System.Single UnityEngine.LocationInfo::get_latitude()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) ;
-// System.Single UnityEngine.LocationInfo::get_longitude()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.LocationService::GetLastLocation_Injected(UnityEngine.LocationInfo&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_GetLastLocation_Injected_m2463D5B46B8E9CA2C10AB3E611CD176BE7C3D472 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* ___0_ret, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.LocationService::IsServiceEnabledByUser()
@@ -1624,56 +1620,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gyroscope_rotationRateUnbiased_Internal_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Single UnityEngine.LocationInfo::get_latitude()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) 
-{
-	float V_0 = 0.0f;
-	{
-		float L_0 = __this->___m_Latitude_1;
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		float L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  float LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
-{
-	LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441*>(__this + _offset);
-	float _returnValue;
-	_returnValue = LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863(_thisAdjusted, method);
-	return _returnValue;
-}
-// System.Single UnityEngine.LocationInfo::get_longitude()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) 
-{
-	float V_0 = 0.0f;
-	{
-		float L_0 = __this->___m_Longitude_2;
-		V_0 = L_0;
-		goto IL_000a;
-	}
-
-IL_000a:
-	{
-		float L_1 = V_0;
-		return L_1;
-	}
-}
-IL2CPP_EXTERN_C  float LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
-{
-	LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441*>(__this + _offset);
-	float _returnValue;
-	_returnValue = LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2(_thisAdjusted, method);
-	return _returnValue;
-}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -1828,12 +1774,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_Start_m5076FE201E96C086B
 		return;
 	}
 }
-// System.Void UnityEngine.LocationService::Start(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_Start_m9415AA1CC6D8E4C450C6CF1C9D32BFBCF44C1F12 (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, float ___0_desiredAccuracyInMeters, const RuntimeMethod* method) 
+// System.Void UnityEngine.LocationService::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_Start_mC2A90619923D4BEB5F9B5CCD95F317B98D67AF3A (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, const RuntimeMethod* method) 
 {
 	{
-		float L_0 = ___0_desiredAccuracyInMeters;
-		LocationService_Start_m5076FE201E96C086B0F9C2D8677DA69C98099F3D(__this, L_0, (10.0f), NULL);
+		LocationService_Start_m5076FE201E96C086B0F9C2D8677DA69C98099F3D(__this, (10.0f), (10.0f), NULL);
 		return;
 	}
 }

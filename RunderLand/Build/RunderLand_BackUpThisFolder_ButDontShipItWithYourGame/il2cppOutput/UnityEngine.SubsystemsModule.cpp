@@ -2506,6 +2506,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemWithProvider__ctor_m7AAC2F13A01
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Boolean UnityEngine.SubsystemsImplementation.SubsystemProvider::get_running()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SubsystemProvider_get_running_m0331B5275B76BA00ACD2635216B455B599E41420 (SubsystemProvider_tE1865B8FE698C81A59AED35E0E536BD53F402455* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___m_Running_0;
+		return L_0;
+	}
+}
 // System.Void UnityEngine.SubsystemsImplementation.SubsystemProvider::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsystemProvider__ctor_mF88170FBB0EBEEB2AB312C10958130058F256038 (SubsystemProvider_tE1865B8FE698C81A59AED35E0E536BD53F402455* __this, const RuntimeMethod* method) 
 {

@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - GPS
+    - NativeToolkit
     - Qualcomm.Snapdragon.Spaces.Samples.CubeManipulation
     - Qualcomm.Snapdragon.Spaces.Samples.DynamicOpenXRLoader
     - Qualcomm.Snapdragon.Spaces.Samples.Lifecycle
@@ -210,73 +211,75 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1648}
     - Class: 114
-      Script: {instanceID: 1598}
+      Script: {instanceID: 1650}
     - Class: 114
-      Script: {instanceID: 1600}
+      Script: {instanceID: 1652}
     - Class: 114
-      Script: {instanceID: 1602}
+      Script: {instanceID: 1654}
     - Class: 114
-      Script: {instanceID: 1604}
+      Script: {instanceID: 1656}
     - Class: 114
-      Script: {instanceID: 1796}
+      Script: {instanceID: 1856}
     - Class: 114
-      Script: {instanceID: 2762}
+      Script: {instanceID: 2840}
     - Class: 114
-      Script: {instanceID: 3246}
+      Script: {instanceID: 3330}
     - Class: 114
-      Script: {instanceID: 4222}
+      Script: {instanceID: 4322}
     - Class: 114
-      Script: {instanceID: 4228}
+      Script: {instanceID: 4328}
     - Class: 114
-      Script: {instanceID: 4254}
+      Script: {instanceID: 4356}
     - Class: 114
-      Script: {instanceID: 4508}
+      Script: {instanceID: 4612}
     - Class: 114
-      Script: {instanceID: 4890}
+      Script: {instanceID: 5000}
     - Class: 114
-      Script: {instanceID: 4914}
+      Script: {instanceID: 5024}
     - Class: 114
-      Script: {instanceID: 4920}
+      Script: {instanceID: 5030}
     - Class: 114
-      Script: {instanceID: 5132}
+      Script: {instanceID: 5248}
     - Class: 114
-      Script: {instanceID: 5150}
+      Script: {instanceID: 5266}
     - Class: 114
-      Script: {instanceID: 6532}
+      Script: {instanceID: 5538}
     - Class: 114
-      Script: {instanceID: 6924}
+      Script: {instanceID: 5914}
     - Class: 114
-      Script: {instanceID: 6926}
+      Script: {instanceID: 6026}
     - Class: 114
-      Script: {instanceID: 7430}
+      Script: {instanceID: 6676}
     - Class: 114
-      Script: {instanceID: 7740}
+      Script: {instanceID: 7074}
     - Class: 114
-      Script: {instanceID: 7902}
+      Script: {instanceID: 7076}
     - Class: 114
-      Script: {instanceID: 7946}
+      Script: {instanceID: 7590}
     - Class: 114
-      Script: {instanceID: 8346}
+      Script: {instanceID: 7904}
     - Class: 114
-      Script: {instanceID: 8668}
+      Script: {instanceID: 8070}
     - Class: 114
-      Script: {instanceID: 9114}
+      Script: {instanceID: 8114}
     - Class: 114
-      Script: {instanceID: 9344}
+      Script: {instanceID: 8524}
     - Class: 114
-      Script: {instanceID: 9598}
+      Script: {instanceID: 8850}
     - Class: 114
-      Script: {instanceID: 9914}
+      Script: {instanceID: 9300}
     - Class: 114
-      Script: {instanceID: 10276}
+      Script: {instanceID: 9542}
     - Class: 114
-      Script: {instanceID: 10354}
+      Script: {instanceID: 9798}
     - Class: 114
-      Script: {instanceID: 33132}
+      Script: {instanceID: 10116}
     - Class: 114
-      Script: {instanceID: 33134}
+      Script: {instanceID: 10488}
+    - Class: 114
+      Script: {instanceID: 10570}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -366,6 +369,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Qualcomm.Snapdragon.Spaces.Samples
     className: GyroToRotation
+  - hash:
+      serializedVersion: 2
+      Hash: ce765e259f4802e47490db9fd9b3baed
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NativeToolkitExample
   - hash:
       serializedVersion: 2
       Hash: 87e6cfc8015337aef5fa238bd355b16f
@@ -1059,6 +1068,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARCore.dll
+    namespaceName: UnityEngine.XR.ARCore
+    className: ARCoreLoaderSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerExitMessageListener
@@ -1140,6 +1155,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1250,6 +1271,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NativeToolkit
+  - hash:
+      serializedVersion: 2
       Hash: 1bc03a501323d00d0037a6b76d25a3ba
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -1266,6 +1293,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARParticipant
+  - hash:
+      serializedVersion: 2
+      Hash: 8b62b89af3da232d13f4e688add72e8e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GPS
   - hash:
       serializedVersion: 2
       Hash: 75de60bccbd35c2e82026d4a60733734
@@ -2156,6 +2189,12 @@ ScriptsOnlyBuild:
     className: QuaternionEulerAffordanceReceiver
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARCore.dll
+    namespaceName: UnityEngine.XR.ARCore
+    className: ARCoreLoader
+  - hash:
+      serializedVersion: 2
       Hash: d9ef7ee2f53b64ce098adec8ead6e1b8
     assemblyName: Assembly-CSharp.dll
     namespaceName: Qualcomm.Snapdragon.Spaces.Samples
@@ -2424,18 +2463,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: d6c25a07efce2e3addf4d4937104e279
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GPS
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UIManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/PortraitUISampleScene.unity
