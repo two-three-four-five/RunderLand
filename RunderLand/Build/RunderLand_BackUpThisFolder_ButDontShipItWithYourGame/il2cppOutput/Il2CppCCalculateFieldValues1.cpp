@@ -4031,27 +4031,27 @@ struct U3CU3Ec_tCA6A4D073378D45745D0E81D226E721969C3BE80  : public RuntimeObject
 {
 };
 
-// GPS/<InitializeGPS>d__6
-struct U3CInitializeGPSU3Ed__6_t1340F4236B3B4051C0370607E6C96F21488C48F8  : public RuntimeObject
+// GPS/<InitializeGPS>d__7
+struct U3CInitializeGPSU3Ed__7_t5B4D034B733415A67FA73F9A7DDFF978221D0637  : public RuntimeObject
 {
-	// System.Int32 GPS/<InitializeGPS>d__6::<>1__state
+	// System.Int32 GPS/<InitializeGPS>d__7::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object GPS/<InitializeGPS>d__6::<>2__current
+	// System.Object GPS/<InitializeGPS>d__7::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// GPS GPS/<InitializeGPS>d__6::<>4__this
+	// GPS GPS/<InitializeGPS>d__7::<>4__this
 	GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9* ___U3CU3E4__this_2;
 };
 
-// GPS/<UpdateGPSData>d__7
-struct U3CUpdateGPSDataU3Ed__7_tE7E0A7671DBA1EA8CDA22BA6004C7FDD81027C70  : public RuntimeObject
+// GPS/<UpdateGPSData>d__8
+struct U3CUpdateGPSDataU3Ed__8_tC07DB9F15FE1ED0D982C4F7820BCB0A544D2009E  : public RuntimeObject
 {
-	// System.Int32 GPS/<UpdateGPSData>d__7::<>1__state
+	// System.Int32 GPS/<UpdateGPSData>d__8::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object GPS/<UpdateGPSData>d__7::<>2__current
+	// System.Object GPS/<UpdateGPSData>d__8::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// GPS GPS/<UpdateGPSData>d__7::<>4__this
+	// GPS GPS/<UpdateGPSData>d__8::<>4__this
 	GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9* ___U3CU3E4__this_2;
-	// System.Int32 GPS/<UpdateGPSData>d__7::<gps_connect>5__2
+	// System.Int32 GPS/<UpdateGPSData>d__8::<gps_connect>5__2
 	int32_t ___U3Cgps_connectU3E5__2_3;
 };
 
@@ -4183,16 +4183,16 @@ struct U3CSaveU3Ed__35_t8F49BA92C586D1F2FA90530E83F80E093A551E5B  : public Runti
 	int32_t ___U3CsavedU3E5__3_6;
 };
 
-// NativeToolkit/<Wait>d__57
-struct U3CWaitU3Ed__57_tAD2C61B453773D25FE2BAD907698FE3397804143  : public RuntimeObject
+// NativeToolkit/<Wait>d__58
+struct U3CWaitU3Ed__58_t8D464CC4E013FE5D66EFC14AEC1356FAD727B27B  : public RuntimeObject
 {
-	// System.Int32 NativeToolkit/<Wait>d__57::<>1__state
+	// System.Int32 NativeToolkit/<Wait>d__58::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object NativeToolkit/<Wait>d__57::<>2__current
+	// System.Object NativeToolkit/<Wait>d__58::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Single NativeToolkit/<Wait>d__57::delay
+	// System.Single NativeToolkit/<Wait>d__58::delay
 	float ___delay_2;
-	// System.Single NativeToolkit/<Wait>d__57::<pauseTarget>5__2
+	// System.Single NativeToolkit/<Wait>d__58::<pauseTarget>5__2
 	float ___U3CpauseTargetU3E5__2_3;
 };
 
@@ -21557,12 +21557,14 @@ struct GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9  : public MonoBehaviour_t53
 	double ___latitude_4;
 	// System.Double GPS::longitude
 	double ___longitude_5;
+	// System.Double GPS::altitude
+	double ___altitude_6;
 	// UnityEngine.UI.Text GPS::statusText
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___statusText_6;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___statusText_7;
 	// UnityEngine.UI.Text GPS::latitudeText
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___latitudeText_7;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___latitudeText_8;
 	// UnityEngine.UI.Text GPS::longitudeText
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___longitudeText_8;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___longitudeText_9;
 };
 
 // Qualcomm.Snapdragon.Spaces.Samples.GazeHoverOverride
@@ -27167,13 +27169,13 @@ struct U3CU3Ec_tCA6A4D073378D45745D0E81D226E721969C3BE80_StaticFields
 
 // UnityEngine.TextCore.Text.FontFeatureTable/<>c
 
-// GPS/<InitializeGPS>d__6
+// GPS/<InitializeGPS>d__7
 
-// GPS/<InitializeGPS>d__6
+// GPS/<InitializeGPS>d__7
 
-// GPS/<UpdateGPSData>d__7
+// GPS/<UpdateGPSData>d__8
 
-// GPS/<UpdateGPSData>d__7
+// GPS/<UpdateGPSData>d__8
 
 // UnityEngine.GUILayoutUtility/LayoutCache
 
@@ -27279,9 +27281,9 @@ struct U3CU3Ec_t480832E6E9C0D190B837CC90FB7A34286511D2E4_StaticFields
 
 // NativeToolkit/<Save>d__35
 
-// NativeToolkit/<Wait>d__57
+// NativeToolkit/<Wait>d__58
 
-// NativeToolkit/<Wait>d__57
+// NativeToolkit/<Wait>d__58
 
 // Internal.Cryptography.OidLookup/<>c
 struct U3CU3Ec_t90F8CB10B454B45A81BE65AA841DD85FE08EA21A_StaticFields
@@ -37538,7 +37540,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4961[7] =
 	static_cast<int32_t>(offsetof(U3CSaveU3Ed__35_t8F49BA92C586D1F2FA90530E83F80E093A551E5B, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CSaveU3Ed__35_t8F49BA92C586D1F2FA90530E83F80E093A551E5B, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CSaveU3Ed__35_t8F49BA92C586D1F2FA90530E83F80E093A551E5B, ___path_2)),static_cast<int32_t>(offsetof(U3CSaveU3Ed__35_t8F49BA92C586D1F2FA90530E83F80E093A551E5B, ___bytes_3)),static_cast<int32_t>(offsetof(U3CSaveU3Ed__35_t8F49BA92C586D1F2FA90530E83F80E093A551E5B, ___imageType_4)),static_cast<int32_t>(offsetof(U3CSaveU3Ed__35_t8F49BA92C586D1F2FA90530E83F80E093A551E5B, ___U3CcountU3E5__2_5)),static_cast<int32_t>(offsetof(U3CSaveU3Ed__35_t8F49BA92C586D1F2FA90530E83F80E093A551E5B, ___U3CsavedU3E5__3_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4962[4] = 
 {
-	static_cast<int32_t>(offsetof(U3CWaitU3Ed__57_tAD2C61B453773D25FE2BAD907698FE3397804143, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CWaitU3Ed__57_tAD2C61B453773D25FE2BAD907698FE3397804143, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CWaitU3Ed__57_tAD2C61B453773D25FE2BAD907698FE3397804143, ___delay_2)),static_cast<int32_t>(offsetof(U3CWaitU3Ed__57_tAD2C61B453773D25FE2BAD907698FE3397804143, ___U3CpauseTargetU3E5__2_3)),};
+	static_cast<int32_t>(offsetof(U3CWaitU3Ed__58_t8D464CC4E013FE5D66EFC14AEC1356FAD727B27B, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CWaitU3Ed__58_t8D464CC4E013FE5D66EFC14AEC1356FAD727B27B, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CWaitU3Ed__58_t8D464CC4E013FE5D66EFC14AEC1356FAD727B27B, ___delay_2)),static_cast<int32_t>(offsetof(U3CWaitU3Ed__58_t8D464CC4E013FE5D66EFC14AEC1356FAD727B27B, ___U3CpauseTargetU3E5__2_3)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4963[11] = 
 {
 	static_cast<int32_t>(offsetof(NativeToolkit_t01B9444FBB88BCED485D42DBD6AF54B46B59B158_StaticFields, ___OnScreenshotTaken_4)),static_cast<int32_t>(offsetof(NativeToolkit_t01B9444FBB88BCED485D42DBD6AF54B46B59B158_StaticFields, ___OnScreenshotSaved_5)),static_cast<int32_t>(offsetof(NativeToolkit_t01B9444FBB88BCED485D42DBD6AF54B46B59B158_StaticFields, ___OnImageSaved_6)),static_cast<int32_t>(offsetof(NativeToolkit_t01B9444FBB88BCED485D42DBD6AF54B46B59B158_StaticFields, ___OnImagePicked_7)),static_cast<int32_t>(offsetof(NativeToolkit_t01B9444FBB88BCED485D42DBD6AF54B46B59B158_StaticFields, ___OnDialogComplete_8)),static_cast<int32_t>(offsetof(NativeToolkit_t01B9444FBB88BCED485D42DBD6AF54B46B59B158_StaticFields, ___OnRateComplete_9)),static_cast<int32_t>(offsetof(NativeToolkit_t01B9444FBB88BCED485D42DBD6AF54B46B59B158_StaticFields, ___OnCameraShotComplete_10)),static_cast<int32_t>(offsetof(NativeToolkit_t01B9444FBB88BCED485D42DBD6AF54B46B59B158_StaticFields, ___OnContactPicked_11)),static_cast<int32_t>(offsetof(NativeToolkit_t01B9444FBB88BCED485D42DBD6AF54B46B59B158_StaticFields, ___instance_12)),static_cast<int32_t>(offsetof(NativeToolkit_t01B9444FBB88BCED485D42DBD6AF54B46B59B158_StaticFields, ___go_13)),static_cast<int32_t>(offsetof(NativeToolkit_t01B9444FBB88BCED485D42DBD6AF54B46B59B158_StaticFields, ___obj_14)),};
@@ -37550,13 +37552,13 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4965[7] =
 	static_cast<int32_t>(offsetof(ComponentVersionDisplay_tD3B24667DDAE137988853D073ACBA113D280D849, ___ComponentName_4)),static_cast<int32_t>(offsetof(ComponentVersionDisplay_tD3B24667DDAE137988853D073ACBA113D280D849, ___VersionIdentifier_5)),static_cast<int32_t>(offsetof(ComponentVersionDisplay_tD3B24667DDAE137988853D073ACBA113D280D849, ___BuildIdentifier_6)),static_cast<int32_t>(offsetof(ComponentVersionDisplay_tD3B24667DDAE137988853D073ACBA113D280D849, ___BuildDateTime_7)),static_cast<int32_t>(offsetof(ComponentVersionDisplay_tD3B24667DDAE137988853D073ACBA113D280D849, ___VersionIdentifierGameObject_8)),static_cast<int32_t>(offsetof(ComponentVersionDisplay_tD3B24667DDAE137988853D073ACBA113D280D849, ___BuildIdentifierGameObject_9)),static_cast<int32_t>(offsetof(ComponentVersionDisplay_tD3B24667DDAE137988853D073ACBA113D280D849, ___BuildDateTimeGameObject_10)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4966[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CInitializeGPSU3Ed__6_t1340F4236B3B4051C0370607E6C96F21488C48F8, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CInitializeGPSU3Ed__6_t1340F4236B3B4051C0370607E6C96F21488C48F8, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CInitializeGPSU3Ed__6_t1340F4236B3B4051C0370607E6C96F21488C48F8, ___U3CU3E4__this_2)),};
+	static_cast<int32_t>(offsetof(U3CInitializeGPSU3Ed__7_t5B4D034B733415A67FA73F9A7DDFF978221D0637, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CInitializeGPSU3Ed__7_t5B4D034B733415A67FA73F9A7DDFF978221D0637, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CInitializeGPSU3Ed__7_t5B4D034B733415A67FA73F9A7DDFF978221D0637, ___U3CU3E4__this_2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4967[4] = 
 {
-	static_cast<int32_t>(offsetof(U3CUpdateGPSDataU3Ed__7_tE7E0A7671DBA1EA8CDA22BA6004C7FDD81027C70, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CUpdateGPSDataU3Ed__7_tE7E0A7671DBA1EA8CDA22BA6004C7FDD81027C70, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CUpdateGPSDataU3Ed__7_tE7E0A7671DBA1EA8CDA22BA6004C7FDD81027C70, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CUpdateGPSDataU3Ed__7_tE7E0A7671DBA1EA8CDA22BA6004C7FDD81027C70, ___U3Cgps_connectU3E5__2_3)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4968[5] = 
+	static_cast<int32_t>(offsetof(U3CUpdateGPSDataU3Ed__8_tC07DB9F15FE1ED0D982C4F7820BCB0A544D2009E, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CUpdateGPSDataU3Ed__8_tC07DB9F15FE1ED0D982C4F7820BCB0A544D2009E, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CUpdateGPSDataU3Ed__8_tC07DB9F15FE1ED0D982C4F7820BCB0A544D2009E, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CUpdateGPSDataU3Ed__8_tC07DB9F15FE1ED0D982C4F7820BCB0A544D2009E, ___U3Cgps_connectU3E5__2_3)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4968[6] = 
 {
-	static_cast<int32_t>(offsetof(GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9, ___latitude_4)),static_cast<int32_t>(offsetof(GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9, ___longitude_5)),static_cast<int32_t>(offsetof(GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9, ___statusText_6)),static_cast<int32_t>(offsetof(GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9, ___latitudeText_7)),static_cast<int32_t>(offsetof(GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9, ___longitudeText_8)),};
+	static_cast<int32_t>(offsetof(GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9, ___latitude_4)),static_cast<int32_t>(offsetof(GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9, ___longitude_5)),static_cast<int32_t>(offsetof(GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9, ___altitude_6)),static_cast<int32_t>(offsetof(GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9, ___statusText_7)),static_cast<int32_t>(offsetof(GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9, ___latitudeText_8)),static_cast<int32_t>(offsetof(GPS_t9C9F600CBDCEB78DE9B27572B3F849ABAB1B92B9, ___longitudeText_9)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4969[1] = 
 {
 	static_cast<int32_t>(offsetof(UIManager_t16825A2483574F37D7D47AB939A6FA639678B1F3, ___arCamera_4)),};
