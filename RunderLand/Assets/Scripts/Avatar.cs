@@ -59,6 +59,7 @@ public class Avatar : MonoBehaviour
         else if (distAfterSec - playerTotalDist < threshold)
         {
             drawMode = 0;
+            path.item2 = route.item1;
         }
         // case 3 : Avatar is in front of the Player
         else if (totalDist > playerTotalDist || distAfterSec - playerTotalDist > threshold)
@@ -69,7 +70,7 @@ public class Avatar : MonoBehaviour
     
     public void moveAvatar(in GameObject avatarObj)
     {
-        totalDist +=
+        totalDist += movePerFrame;
         if (drawMode == 1)
         {
             // Move Object to the front and scale down
