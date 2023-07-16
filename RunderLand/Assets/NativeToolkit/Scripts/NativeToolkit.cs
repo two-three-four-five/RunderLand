@@ -584,6 +584,34 @@ public class NativeToolkit : MonoBehaviour {
         return 0;
     }
 
+	public static double GetAltitude()
+	{
+		Instance.Awake();
+
+		if (!Input.location.isEnabledByUser)
+		{
+			return 0;
+		}
+
+		#if UNITY_IOS
+
+        if(Application.platform == RuntimePlatform.IPhonePlayer)
+        {
+            return getAltitude();
+        }
+
+		#elif UNITY_ANDROID
+
+        if(Application.platform == RuntimePlatform.Android)
+        {
+            return obj.CallStatic<double>("getAltitude");
+        }
+        
+		#endif
+
+		return 0;
+	}
+
 	public static string GetCountryCode()
 	{
 		Instance.Awake ();

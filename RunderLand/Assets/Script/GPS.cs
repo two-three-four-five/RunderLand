@@ -6,15 +6,17 @@ public class GPS : MonoBehaviour
 {
     public double latitude;
     public double longitude;
+    public double altitude;
 	public Text	statusText;
     public Text latitudeText;
     public Text longitudeText;
+    public Text altitudeText;
 
     void Start()
     {
         // 위치 서비스 초기화
         Input.location.Start();
-        NativeToolkit.StartLocation();
+        altitudeText.text = NativeToolkit.StartLocation() ? "true" : "false";
 
         // 위치 서비스 활성화 확인
         if (Input.location.isEnabledByUser)
@@ -69,8 +71,10 @@ public class GPS : MonoBehaviour
             //longitude = currentGPSPosition.longitude;
             latitude = NativeToolkit.GetLatitude();
             longitude = NativeToolkit.GetLongitude();
-            latitudeText.text =  latitude.ToString();
+            altitude = currentGPSPosition.altitude;
+            latitudeText.text = latitude.ToString();
             longitudeText.text = longitude.ToString();
+            altitudeText.text = altitude.ToString();
 			statusText.text = (Input.location.status == LocationServiceStatus.Running ? "run" : "not run") + gps_connect.ToString();
         }
     }

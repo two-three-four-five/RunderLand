@@ -196,6 +196,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 65
@@ -211,75 +213,75 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1648}
+      Script: {instanceID: 1664}
     - Class: 114
-      Script: {instanceID: 1650}
+      Script: {instanceID: 1666}
     - Class: 114
-      Script: {instanceID: 1652}
+      Script: {instanceID: 1668}
     - Class: 114
-      Script: {instanceID: 1654}
+      Script: {instanceID: 1670}
     - Class: 114
-      Script: {instanceID: 1656}
+      Script: {instanceID: 1672}
     - Class: 114
-      Script: {instanceID: 1856}
+      Script: {instanceID: 1872}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2856}
     - Class: 114
-      Script: {instanceID: 3330}
+      Script: {instanceID: 3346}
     - Class: 114
-      Script: {instanceID: 4322}
+      Script: {instanceID: 4338}
     - Class: 114
-      Script: {instanceID: 4328}
+      Script: {instanceID: 4344}
     - Class: 114
-      Script: {instanceID: 4356}
+      Script: {instanceID: 4372}
     - Class: 114
-      Script: {instanceID: 4612}
+      Script: {instanceID: 4628}
     - Class: 114
-      Script: {instanceID: 5000}
+      Script: {instanceID: 5016}
     - Class: 114
-      Script: {instanceID: 5024}
+      Script: {instanceID: 5040}
     - Class: 114
-      Script: {instanceID: 5030}
+      Script: {instanceID: 5046}
     - Class: 114
-      Script: {instanceID: 5248}
+      Script: {instanceID: 5264}
     - Class: 114
-      Script: {instanceID: 5266}
+      Script: {instanceID: 5282}
     - Class: 114
-      Script: {instanceID: 5538}
+      Script: {instanceID: 5554}
     - Class: 114
-      Script: {instanceID: 5914}
+      Script: {instanceID: 5930}
     - Class: 114
-      Script: {instanceID: 6026}
+      Script: {instanceID: 6042}
     - Class: 114
-      Script: {instanceID: 6676}
+      Script: {instanceID: 6692}
     - Class: 114
-      Script: {instanceID: 7074}
+      Script: {instanceID: 7090}
     - Class: 114
-      Script: {instanceID: 7076}
+      Script: {instanceID: 7092}
     - Class: 114
-      Script: {instanceID: 7590}
+      Script: {instanceID: 7606}
     - Class: 114
-      Script: {instanceID: 7904}
+      Script: {instanceID: 7920}
     - Class: 114
-      Script: {instanceID: 8070}
+      Script: {instanceID: 8086}
     - Class: 114
-      Script: {instanceID: 8114}
+      Script: {instanceID: 8130}
     - Class: 114
-      Script: {instanceID: 8524}
+      Script: {instanceID: 8540}
     - Class: 114
-      Script: {instanceID: 8850}
+      Script: {instanceID: 8866}
     - Class: 114
-      Script: {instanceID: 9300}
+      Script: {instanceID: 9316}
     - Class: 114
-      Script: {instanceID: 9542}
+      Script: {instanceID: 9558}
     - Class: 114
-      Script: {instanceID: 9798}
+      Script: {instanceID: 9814}
     - Class: 114
-      Script: {instanceID: 10116}
+      Script: {instanceID: 10132}
     - Class: 114
-      Script: {instanceID: 10488}
+      Script: {instanceID: 10504}
     - Class: 114
-      Script: {instanceID: 10570}
+      Script: {instanceID: 10586}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1295,7 +1297,7 @@ ScriptsOnlyBuild:
     className: ARParticipant
   - hash:
       serializedVersion: 2
-      Hash: 8b62b89af3da232d13f4e688add72e8e
+      Hash: 2b01bfd57445b2b6175fe12203ec3d2b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GPS

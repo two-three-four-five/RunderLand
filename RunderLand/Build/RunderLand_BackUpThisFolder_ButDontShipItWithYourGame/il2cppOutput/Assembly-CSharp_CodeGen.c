@@ -214,30 +214,30 @@ extern void GPS_InitializeGPS_m5599ADEEB544C139284B83DDC0BA345F32ED21FA (void);
 extern void GPS_UpdateGPSData_mCF2F042780224D789EA3AB03E8E30149DC19CC0D (void);
 // 0x00000065 System.Void GPS::.ctor()
 extern void GPS__ctor_mD1DE1233CA5BBE1CB8BACA287B8594BF7B010F59 (void);
-// 0x00000066 System.Void GPS/<InitializeGPS>d__7::.ctor(System.Int32)
-extern void U3CInitializeGPSU3Ed__7__ctor_m822DAE3BD935CB300C18AB6520B0147EF61429D3 (void);
-// 0x00000067 System.Void GPS/<InitializeGPS>d__7::System.IDisposable.Dispose()
-extern void U3CInitializeGPSU3Ed__7_System_IDisposable_Dispose_m1DBA7084C38E4F6D6590411AC317434E957B6BE2 (void);
-// 0x00000068 System.Boolean GPS/<InitializeGPS>d__7::MoveNext()
-extern void U3CInitializeGPSU3Ed__7_MoveNext_mBD2815CD0464DB200BBC13FCF6A0D3FC99902BEC (void);
-// 0x00000069 System.Object GPS/<InitializeGPS>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CInitializeGPSU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7C1C226CC812B31AA6DAB4F70994E0DE04241550 (void);
-// 0x0000006A System.Void GPS/<InitializeGPS>d__7::System.Collections.IEnumerator.Reset()
-extern void U3CInitializeGPSU3Ed__7_System_Collections_IEnumerator_Reset_m995B9F3774EC668A3C038A3EE7A4C4E82635B918 (void);
-// 0x0000006B System.Object GPS/<InitializeGPS>d__7::System.Collections.IEnumerator.get_Current()
-extern void U3CInitializeGPSU3Ed__7_System_Collections_IEnumerator_get_Current_m42DF36467612F7A0E061E0050E3B8C9E145BA40C (void);
-// 0x0000006C System.Void GPS/<UpdateGPSData>d__8::.ctor(System.Int32)
-extern void U3CUpdateGPSDataU3Ed__8__ctor_m1DE64407F0A64296DDC2C6B6ED4B49B9434A7E87 (void);
-// 0x0000006D System.Void GPS/<UpdateGPSData>d__8::System.IDisposable.Dispose()
-extern void U3CUpdateGPSDataU3Ed__8_System_IDisposable_Dispose_mF392CB885E645DB28F09DBFA2A2686EF08791AAE (void);
-// 0x0000006E System.Boolean GPS/<UpdateGPSData>d__8::MoveNext()
-extern void U3CUpdateGPSDataU3Ed__8_MoveNext_mDE8448B1835364A9EFD909CFF8592CD7EB0C978E (void);
-// 0x0000006F System.Object GPS/<UpdateGPSData>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CUpdateGPSDataU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m50669BC5E173BD2E54AB6F5D9FE630CED6039A76 (void);
-// 0x00000070 System.Void GPS/<UpdateGPSData>d__8::System.Collections.IEnumerator.Reset()
-extern void U3CUpdateGPSDataU3Ed__8_System_Collections_IEnumerator_Reset_m435765D3D9439CFE61E19E612DFDE4F2E7179F9B (void);
-// 0x00000071 System.Object GPS/<UpdateGPSData>d__8::System.Collections.IEnumerator.get_Current()
-extern void U3CUpdateGPSDataU3Ed__8_System_Collections_IEnumerator_get_Current_m6E14A24A22E00C06ED611D8FD1037783D7117D29 (void);
+// 0x00000066 System.Void GPS/<InitializeGPS>d__8::.ctor(System.Int32)
+extern void U3CInitializeGPSU3Ed__8__ctor_mAB1EC61AC80F69D749A7825080945611761151A8 (void);
+// 0x00000067 System.Void GPS/<InitializeGPS>d__8::System.IDisposable.Dispose()
+extern void U3CInitializeGPSU3Ed__8_System_IDisposable_Dispose_m0283CB2C7FCDB51862E7591954DD3554DD6ED3BB (void);
+// 0x00000068 System.Boolean GPS/<InitializeGPS>d__8::MoveNext()
+extern void U3CInitializeGPSU3Ed__8_MoveNext_mB618A0877E9E6124F4C704C4F2F0138FE62D037B (void);
+// 0x00000069 System.Object GPS/<InitializeGPS>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CInitializeGPSU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD5E063676F56C459BCDCBF8F1302FC703ABF704A (void);
+// 0x0000006A System.Void GPS/<InitializeGPS>d__8::System.Collections.IEnumerator.Reset()
+extern void U3CInitializeGPSU3Ed__8_System_Collections_IEnumerator_Reset_mEE1A3D78147CD5DE168EFC02BFC0B19A5396E461 (void);
+// 0x0000006B System.Object GPS/<InitializeGPS>d__8::System.Collections.IEnumerator.get_Current()
+extern void U3CInitializeGPSU3Ed__8_System_Collections_IEnumerator_get_Current_mB55C70FC805B1B7E15516E21D78A21D62091834B (void);
+// 0x0000006C System.Void GPS/<UpdateGPSData>d__9::.ctor(System.Int32)
+extern void U3CUpdateGPSDataU3Ed__9__ctor_mF256C18DF7BDFAF2D5A328689EBC10C4963A8DCE (void);
+// 0x0000006D System.Void GPS/<UpdateGPSData>d__9::System.IDisposable.Dispose()
+extern void U3CUpdateGPSDataU3Ed__9_System_IDisposable_Dispose_m7791ABA9824425654C649C5F55E4B1C358EDF032 (void);
+// 0x0000006E System.Boolean GPS/<UpdateGPSData>d__9::MoveNext()
+extern void U3CUpdateGPSDataU3Ed__9_MoveNext_mBDE81EC2AA088E1C8AA7183A5797255D1078E5F9 (void);
+// 0x0000006F System.Object GPS/<UpdateGPSData>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CUpdateGPSDataU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBD72040139C0599EB68D2E9F0824F43336F01153 (void);
+// 0x00000070 System.Void GPS/<UpdateGPSData>d__9::System.Collections.IEnumerator.Reset()
+extern void U3CUpdateGPSDataU3Ed__9_System_Collections_IEnumerator_Reset_mAC71DE07660477B82FB5FEC10A95E6B7FF23C4E4 (void);
+// 0x00000071 System.Object GPS/<UpdateGPSData>d__9::System.Collections.IEnumerator.get_Current()
+extern void U3CUpdateGPSDataU3Ed__9_System_Collections_IEnumerator_get_Current_m56BCD7FE29CBFDF75E3B558B9C3882C824871689 (void);
 // 0x00000072 System.Void UIManager::Start()
 extern void UIManager_Start_m113F392674AB08A26877728CD36F06332E869080 (void);
 // 0x00000073 System.Void UIManager::Update()
@@ -819,18 +819,18 @@ static Il2CppMethodPointer s_methodPointers[352] =
 	GPS_InitializeGPS_m5599ADEEB544C139284B83DDC0BA345F32ED21FA,
 	GPS_UpdateGPSData_mCF2F042780224D789EA3AB03E8E30149DC19CC0D,
 	GPS__ctor_mD1DE1233CA5BBE1CB8BACA287B8594BF7B010F59,
-	U3CInitializeGPSU3Ed__7__ctor_m822DAE3BD935CB300C18AB6520B0147EF61429D3,
-	U3CInitializeGPSU3Ed__7_System_IDisposable_Dispose_m1DBA7084C38E4F6D6590411AC317434E957B6BE2,
-	U3CInitializeGPSU3Ed__7_MoveNext_mBD2815CD0464DB200BBC13FCF6A0D3FC99902BEC,
-	U3CInitializeGPSU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7C1C226CC812B31AA6DAB4F70994E0DE04241550,
-	U3CInitializeGPSU3Ed__7_System_Collections_IEnumerator_Reset_m995B9F3774EC668A3C038A3EE7A4C4E82635B918,
-	U3CInitializeGPSU3Ed__7_System_Collections_IEnumerator_get_Current_m42DF36467612F7A0E061E0050E3B8C9E145BA40C,
-	U3CUpdateGPSDataU3Ed__8__ctor_m1DE64407F0A64296DDC2C6B6ED4B49B9434A7E87,
-	U3CUpdateGPSDataU3Ed__8_System_IDisposable_Dispose_mF392CB885E645DB28F09DBFA2A2686EF08791AAE,
-	U3CUpdateGPSDataU3Ed__8_MoveNext_mDE8448B1835364A9EFD909CFF8592CD7EB0C978E,
-	U3CUpdateGPSDataU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m50669BC5E173BD2E54AB6F5D9FE630CED6039A76,
-	U3CUpdateGPSDataU3Ed__8_System_Collections_IEnumerator_Reset_m435765D3D9439CFE61E19E612DFDE4F2E7179F9B,
-	U3CUpdateGPSDataU3Ed__8_System_Collections_IEnumerator_get_Current_m6E14A24A22E00C06ED611D8FD1037783D7117D29,
+	U3CInitializeGPSU3Ed__8__ctor_mAB1EC61AC80F69D749A7825080945611761151A8,
+	U3CInitializeGPSU3Ed__8_System_IDisposable_Dispose_m0283CB2C7FCDB51862E7591954DD3554DD6ED3BB,
+	U3CInitializeGPSU3Ed__8_MoveNext_mB618A0877E9E6124F4C704C4F2F0138FE62D037B,
+	U3CInitializeGPSU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD5E063676F56C459BCDCBF8F1302FC703ABF704A,
+	U3CInitializeGPSU3Ed__8_System_Collections_IEnumerator_Reset_mEE1A3D78147CD5DE168EFC02BFC0B19A5396E461,
+	U3CInitializeGPSU3Ed__8_System_Collections_IEnumerator_get_Current_mB55C70FC805B1B7E15516E21D78A21D62091834B,
+	U3CUpdateGPSDataU3Ed__9__ctor_mF256C18DF7BDFAF2D5A328689EBC10C4963A8DCE,
+	U3CUpdateGPSDataU3Ed__9_System_IDisposable_Dispose_m7791ABA9824425654C649C5F55E4B1C358EDF032,
+	U3CUpdateGPSDataU3Ed__9_MoveNext_mBDE81EC2AA088E1C8AA7183A5797255D1078E5F9,
+	U3CUpdateGPSDataU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBD72040139C0599EB68D2E9F0824F43336F01153,
+	U3CUpdateGPSDataU3Ed__9_System_Collections_IEnumerator_Reset_mAC71DE07660477B82FB5FEC10A95E6B7FF23C4E4,
+	U3CUpdateGPSDataU3Ed__9_System_Collections_IEnumerator_get_Current_m56BCD7FE29CBFDF75E3B558B9C3882C824871689,
 	UIManager_Start_m113F392674AB08A26877728CD36F06332E869080,
 	UIManager_Update_m95D2E80B8F461F15C1B9BD6DB0811F5CC18571AB,
 	UIManager__ctor_mC9DC2B8984E76F424E73C1860AD4BD3DEBF6573F,
