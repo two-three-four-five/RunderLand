@@ -19,9 +19,9 @@ public class GPXLogger : MonoBehaviour
         // Continuously log GPS data
         while (true)
         {
-            float latitude = GPSModule.GetComponent<GPS>.latitude;
-            float longitude = GPSModule.GetComponent<GPS>.longitude;
-            // float altitude = GPSModule.GetComponent<GPS>.altitude;
+            double latitude = GPSModule.GetComponent<GPS>().latitude;
+            double longitude = GPSModule.GetComponent<GPS>().longitude;
+            // float altitude = GPSModule.GetComponent<GPS>().altitude;
             float altitude = 0;
 
             // Append track point to GPX file

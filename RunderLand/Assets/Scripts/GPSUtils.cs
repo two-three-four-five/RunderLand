@@ -1,3 +1,5 @@
+using System;
+
 public class GPSUtils
 {
     public static double CalculateDistance(GPSData p1, GPSData p2)
@@ -14,8 +16,8 @@ public class GPSUtils
 
     public static double CalculateDirection(GPSData p1, GPSData p2)
     {
-        double dx = p2.x - p1.x;
-        double dy = p2.y - p1.y;
+        double dx = p2.latitude - p1.latitude;
+        double dy = p2.longitude - p1.longitude;
 
         double radianAngle = Math.Atan2(dy, dx);
         double degreeAngle = radianAngle * (180.0 / Math.PI);

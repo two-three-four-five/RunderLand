@@ -5,9 +5,9 @@ using UnityEngine;
 public class GPXReader : MonoBehaviour
 {
     // File path of the GPX file to read
-    public string       gpxFilePath = "log.gpx";
+    private string       gpxFilePath = "log.gpx";
 
-    private static List<GPSData> ReadGPXFile(string filePath)
+    public static List<GPSData> ReadGPXFile(string filePath)
     {
         List<GPSData> gpsDataList = new List<GPSData>();
 

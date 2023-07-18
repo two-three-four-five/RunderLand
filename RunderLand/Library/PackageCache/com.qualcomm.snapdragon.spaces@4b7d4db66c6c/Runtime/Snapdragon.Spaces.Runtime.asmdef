@@ -1,0 +1,44 @@
+{
+    "name": "Snapdragon.Spaces.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4847341ff46394e83bb78fbd0652937e",
+        "GUID:96aa6ba065960476598f8f643e7252b6",
+        "GUID:92703082f92b41ba80f0d6912de66115",
+        "GUID:e40ba710768534012815d3193fa296cb",
+        "GUID:f9fe0089ec81f4079af78eb2287a6163",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:a9420e37d7990b54abdef6688edbe313",
+        "GUID:b45beccc4e8e141cb8f9e6b2a8da6b3f",
+        "GUID:dc960734dc080426fa6612f1c5fe95f3",
+        "GUID:fe685ec1767f73d42b749ea8045bfe43"
+    ],
+    "includePlatforms": [
+        "Android",
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.qualcomm.qcht.unity.core",
+            "expression": "3.0.4",
+            "define": "QCHT_UNITY_CORE"
+        },
+        {
+            "name": "com.qualcomm.qcht.unity.interactions",
+            "expression": "4.0.0-pre.0",
+            "define": "QCHT_UNITY_CORE"
+        },
+        {
+            "name": "com.unity.xr.arfoundation",
+            "expression": "5.0.0",
+            "define": "AR_FOUNDATION_5_0_OR_NEWER"
+        }
+    ],
+    "noEngineReferences": false
+}
