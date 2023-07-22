@@ -75,10 +75,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -238,67 +236,67 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1644}
     - Class: 114
-      Script: {instanceID: 1836}
+      Script: {instanceID: 1842}
     - Class: 114
-      Script: {instanceID: 1954}
+      Script: {instanceID: 1960}
     - Class: 114
-      Script: {instanceID: 2782}
+      Script: {instanceID: 2788}
     - Class: 114
-      Script: {instanceID: 3252}
+      Script: {instanceID: 3258}
     - Class: 114
-      Script: {instanceID: 3862}
+      Script: {instanceID: 3868}
     - Class: 114
-      Script: {instanceID: 4212}
+      Script: {instanceID: 4220}
     - Class: 114
-      Script: {instanceID: 4218}
+      Script: {instanceID: 4226}
     - Class: 114
-      Script: {instanceID: 4244}
+      Script: {instanceID: 4252}
     - Class: 114
-      Script: {instanceID: 4492}
+      Script: {instanceID: 4500}
     - Class: 114
-      Script: {instanceID: 4866}
+      Script: {instanceID: 4874}
     - Class: 114
-      Script: {instanceID: 4890}
+      Script: {instanceID: 4898}
     - Class: 114
-      Script: {instanceID: 4896}
+      Script: {instanceID: 4904}
     - Class: 114
-      Script: {instanceID: 5106}
+      Script: {instanceID: 5114}
     - Class: 114
-      Script: {instanceID: 5122}
+      Script: {instanceID: 5130}
     - Class: 114
-      Script: {instanceID: 6478}
+      Script: {instanceID: 6486}
     - Class: 114
-      Script: {instanceID: 6836}
+      Script: {instanceID: 6844}
     - Class: 114
-      Script: {instanceID: 6858}
+      Script: {instanceID: 6866}
     - Class: 114
-      Script: {instanceID: 7340}
+      Script: {instanceID: 7348}
     - Class: 114
-      Script: {instanceID: 7648}
+      Script: {instanceID: 7656}
     - Class: 114
-      Script: {instanceID: 7654}
+      Script: {instanceID: 7662}
     - Class: 114
-      Script: {instanceID: 7810}
+      Script: {instanceID: 7818}
     - Class: 114
-      Script: {instanceID: 7854}
+      Script: {instanceID: 7862}
     - Class: 114
-      Script: {instanceID: 8240}
+      Script: {instanceID: 8248}
     - Class: 114
-      Script: {instanceID: 8560}
+      Script: {instanceID: 8568}
     - Class: 114
-      Script: {instanceID: 9004}
+      Script: {instanceID: 9012}
     - Class: 114
-      Script: {instanceID: 9240}
+      Script: {instanceID: 9248}
     - Class: 114
-      Script: {instanceID: 9484}
+      Script: {instanceID: 9492}
     - Class: 114
-      Script: {instanceID: 9798}
+      Script: {instanceID: 9806}
     - Class: 114
-      Script: {instanceID: 10152}
+      Script: {instanceID: 10160}
     - Class: 114
-      Script: {instanceID: 10216}
+      Script: {instanceID: 10224}
     - Class: 114
-      Script: {instanceID: 10232}
+      Script: {instanceID: 10240}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -842,7 +840,7 @@ ScriptsOnlyBuild:
     className: XRControllerManager
   - hash:
       serializedVersion: 2
-      Hash: af9633a4b770a524f952878a36b05d39
+      Hash: de70cf07ed07feb7eeebf5ed35de1c18
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GPXLogger

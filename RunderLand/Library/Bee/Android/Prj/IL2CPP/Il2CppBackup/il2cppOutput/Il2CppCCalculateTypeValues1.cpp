@@ -2927,14 +2927,14 @@ struct Number_t006CBC9914386BB171582F4C3A3EEB2EE404D461  : public RuntimeObject
 {
 };
 
-// GPXLogger/<Start>d__3
-struct U3CStartU3Ed__3_t4EBD380337194690001E05E2A5F7CCF952A056A0  : public RuntimeObject
+// GPXLogger/<WriteDataToFile>d__4
+struct U3CWriteDataToFileU3Ed__4_t5DBD8696964FB67ECE84493C93987B7293AABCF0  : public RuntimeObject
 {
-	// System.Int32 GPXLogger/<Start>d__3::<>1__state
+	// System.Int32 GPXLogger/<WriteDataToFile>d__4::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object GPXLogger/<Start>d__3::<>2__current
+	// System.Object GPXLogger/<WriteDataToFile>d__4::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// GPXLogger GPXLogger/<Start>d__3::<>4__this
+	// GPXLogger GPXLogger/<WriteDataToFile>d__4::<>4__this
 	GPXLogger_tBD6F4337C5398546428F854FB1673BAC0676AF44* ___U3CU3E4__this_2;
 };
 
@@ -18812,9 +18812,9 @@ struct Number_t006CBC9914386BB171582F4C3A3EEB2EE404D461_StaticFields
 
 // System.Globalization.FormatProvider/Number
 
-// GPXLogger/<Start>d__3
+// GPXLogger/<WriteDataToFile>d__4
 
-// GPXLogger/<Start>d__3
+// GPXLogger/<WriteDataToFile>d__4
 
 // UnityEngine.GUILayoutUtility/LayoutCache
 
@@ -25040,7 +25040,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize5975 = { sizeof(GPSData_tBB5
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5976;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5976 = { sizeof(GPSUtils_tE0DA0C13864E69F6385F3990E2D9967514FD9115), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5977;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5977 = { sizeof(U3CStartU3Ed__3_t4EBD380337194690001E05E2A5F7CCF952A056A0), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5977 = { sizeof(U3CWriteDataToFileU3Ed__4_t5DBD8696964FB67ECE84493C93987B7293AABCF0), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5978;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5978 = { sizeof(GPXLogger_tBD6F4337C5398546428F854FB1673BAC0676AF44), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5979;

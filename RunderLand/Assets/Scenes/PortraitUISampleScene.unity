@@ -3302,7 +3302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7140c11874f840b490e1766ca839b68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gpxFilePath: /Users/jinho/Github/RunderLand/RunderLand/Assets/StreamingAssets/log.gpx
   updateInterval: 1
   GPSModule: {fileID: 1472594480}
 --- !u!4 &1020872812

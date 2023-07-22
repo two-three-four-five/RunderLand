@@ -6410,14 +6410,14 @@ struct U3CU3Ec_tC2DEFD54496D8274D1995CC11D74A23339DC4447  : public RuntimeObject
 {
 };
 
-// GPXLogger/<Start>d__3
-struct U3CStartU3Ed__3_t4EBD380337194690001E05E2A5F7CCF952A056A0  : public RuntimeObject
+// GPXLogger/<WriteDataToFile>d__4
+struct U3CWriteDataToFileU3Ed__4_t5DBD8696964FB67ECE84493C93987B7293AABCF0  : public RuntimeObject
 {
-	// System.Int32 GPXLogger/<Start>d__3::<>1__state
+	// System.Int32 GPXLogger/<WriteDataToFile>d__4::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object GPXLogger/<Start>d__3::<>2__current
+	// System.Object GPXLogger/<WriteDataToFile>d__4::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// GPXLogger GPXLogger/<Start>d__3::<>4__this
+	// GPXLogger GPXLogger/<WriteDataToFile>d__4::<>4__this
 	GPXLogger_tBD6F4337C5398546428F854FB1673BAC0676AF44* ___U3CU3E4__this_2;
 };
 
@@ -36143,9 +36143,9 @@ struct U3CU3Ec_tC2DEFD54496D8274D1995CC11D74A23339DC4447_StaticFields
 
 // System.Net.FtpWebRequest/<>c
 
-// GPXLogger/<Start>d__3
+// GPXLogger/<WriteDataToFile>d__4
 
-// GPXLogger/<Start>d__3
+// GPXLogger/<WriteDataToFile>d__4
 
 // UnityEngine.GUILayoutUtility/LayoutCache
 
@@ -51514,7 +51514,7 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5975[3] =
 	static_cast<int32_t>(offsetof(GPSData_tBB589A832F9F8889EF73B821A420BB43DAB74D72, ___latitude_0)),static_cast<int32_t>(offsetof(GPSData_tBB589A832F9F8889EF73B821A420BB43DAB74D72, ___longitude_1)),static_cast<int32_t>(offsetof(GPSData_tBB589A832F9F8889EF73B821A420BB43DAB74D72, ___altitude_2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5977[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CStartU3Ed__3_t4EBD380337194690001E05E2A5F7CCF952A056A0, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CStartU3Ed__3_t4EBD380337194690001E05E2A5F7CCF952A056A0, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CStartU3Ed__3_t4EBD380337194690001E05E2A5F7CCF952A056A0, ___U3CU3E4__this_2)),};
+	static_cast<int32_t>(offsetof(U3CWriteDataToFileU3Ed__4_t5DBD8696964FB67ECE84493C93987B7293AABCF0, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CWriteDataToFileU3Ed__4_t5DBD8696964FB67ECE84493C93987B7293AABCF0, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CWriteDataToFileU3Ed__4_t5DBD8696964FB67ECE84493C93987B7293AABCF0, ___U3CU3E4__this_2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5978[3] = 
 {
 	static_cast<int32_t>(offsetof(GPXLogger_tBD6F4337C5398546428F854FB1673BAC0676AF44, ___gpxFilePath_4)),static_cast<int32_t>(offsetof(GPXLogger_tBD6F4337C5398546428F854FB1673BAC0676AF44, ___updateInterval_5)),static_cast<int32_t>(offsetof(GPXLogger_tBD6F4337C5398546428F854FB1673BAC0676AF44, ___GPSModule_6)),};
