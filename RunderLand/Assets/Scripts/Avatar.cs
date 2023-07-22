@@ -2,11 +2,11 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
-public class Avatar : MonoBehaviour
+public class Avatar
 {
-    private GameObject                      avatar = GameObject.Find("avatar");
-    private Camera                          arCamera = GameObject.Find("AR Camera").GetComponent<Camera>();
-    private GameObject                      locationModule = GameObject.Find("LocationModule");
+    private GameObject                      avatar;
+    private Camera                          arCamera;
+    private GameObject                      locationModule;
     private Vector3                         directionVector;
     private List<double>                    distanceList;
     private int                             dist_idx = 0;
@@ -16,25 +16,33 @@ public class Avatar : MonoBehaviour
     private double                          movedDist = 0;
     private double                          avatarTotalDist = 0;
 
+    public void FindAsset()
+    {
+        avatar = GameObject.Find("Avatar");
+        arCamera = GameObject.Find("AR Camera").GetComponent<Camera>();
+        locationModule = GameObject.Find("Location Module");
+    }
+
+
     public Avatar(string filePath)
     {
         List<GPSData>   gpsDataList = GPXReader.ReadGPXFile(filePath);
         distanceList = new List<double>();
-        
+
+        if (gpsDataList == null)
+            return;
+
         for (int idx = 0; idx < gpsDataList.Count - 1; idx++)
         {
             distanceList.Add(GPSUtils.CalculateDistance(gpsDataList[idx], gpsDataList[idx + 1]));
         }
     }
 
-    public void setAvatarAsset(GameObject avatar)
-    {
-        this.avatar = avatar;
-    }
-
     public void moveAvatar(in List<Tuple<GPSData, double, Vector3>> route, in double playerTotalDist)
     {
         directionVector = locationModule.GetComponent<LocationModule>().directionVector;
+        if (dist_idx >= distanceList.Count)
+            return;
         if (movedDist >= distanceList[dist_idx])
         {
             movedDist = 0;

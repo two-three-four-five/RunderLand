@@ -1,18 +1,19 @@
 using System.Collections.Generic;
 using System.Xml;
+using System.IO;
 using UnityEngine;
 
 public class GPXReader : MonoBehaviour
 {
     // File path of the GPX file to read
-    private string       gpxFilePath = "log.gpx";
+    private static string       gpxFilePath = Path.Combine(Application.streamingAssetsPath, "log.gpx");
 
     public static List<GPSData> ReadGPXFile(string filePath)
     {
         List<GPSData> gpsDataList = new List<GPSData>();
 
         XmlDocument doc = new XmlDocument();
-        doc.Load(filePath);
+        doc.Load(gpxFilePath);
 
         XmlNodeList trackPoints = doc.SelectNodes("//trkpt");
 

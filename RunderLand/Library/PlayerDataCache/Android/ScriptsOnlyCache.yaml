@@ -1,8 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - GPS
     - GPXLogger
+    - LocationModule
+    - Play
     - Qualcomm.Snapdragon.Spaces.Samples.CubeManipulation
     - Qualcomm.Snapdragon.Spaces.Samples.DynamicOpenXRLoader
     - Qualcomm.Snapdragon.Spaces.Samples.Lifecycle
@@ -71,6 +72,14 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.OpenXR.Features.Interactions.ValveIndexControllerProfile
     - UnityEngine.XR.OpenXR.OpenXRLoader
     - UnityEngine.XR.OpenXR.OpenXRSettings
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -200,11 +209,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -222,6 +239,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1644}
     - Class: 114
       Script: {instanceID: 1836}
+    - Class: 114
+      Script: {instanceID: 1954}
     - Class: 114
       Script: {instanceID: 2782}
     - Class: 114
@@ -283,6 +302,8 @@ ScriptsOnlyBuild:
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -425,7 +446,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 6839ea0cb0e8041816ff2f74a8e4f813
+      Hash: 359048156b36c45ce58f42a5d20c4c8d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Play
@@ -941,12 +962,6 @@ ScriptsOnlyBuild:
     className: UnityOnSelectMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Avatar
-  - hash:
-      serializedVersion: 2
       Hash: 0da473aa6cb38e900f89f89b2eceeab7
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Rendering
@@ -1307,12 +1322,6 @@ ScriptsOnlyBuild:
     className: ARParticipant
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Player
-  - hash:
-      serializedVersion: 2
       Hash: 75de60bccbd35c2e82026d4a60733734
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1643,10 +1652,10 @@ ScriptsOnlyBuild:
     className: InputActionManager
   - hash:
       serializedVersion: 2
-      Hash: 05dac6e72d79d64f8b443575336f580b
+      Hash: d66b0e002809404167ab26d3d3dce0a4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GPS
+    className: LocationModule
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67

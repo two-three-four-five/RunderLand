@@ -4,16 +4,16 @@ using System.IO;
 
 public class Play : MonoBehaviour
 {
-    public Player       player = new Player();
+    private Player      player = new Player();
     // Android: /data/data/package_name/files or /sdcard/Android/data/package_name/files (depending on the device and app permissions)
-    public Avatar       avatar = new Avatar(Path.Combine(Application.streamingAssetsPath, "log.gpx"));
+    private Avatar      avatar = new Avatar(Path.Combine(Application.streamingAssetsPath, "log.gpx"));
+    private float       trackingInterval = 1f;
     public GameObject   avatarAsset;
-    public float        trackingInterval = 1f;
 
     private IEnumerator Start()
     {
-        // 1. Set the starting position       
-        avatar.setAvatarAsset(avatarAsset);
+        // 1. Set the starting position
+        avatar.FindAsset();
         player.SetPosition();
 
         while (true)

@@ -430,12 +430,12 @@ struct RegistrationList_1_t59D6072B55134A385BD91BA10DD1C732AD6C2E6C;
 struct RegistrationList_1_t1AFBA9D926D100296ED3F61A8BE02BA1EDC23859;
 // UnityEngine.XR.Interaction.Toolkit.Utilities.SmallRegistrationList`1<UnityEngine.XR.Interaction.Toolkit.Transformers.IXRGrabTransformer>
 struct SmallRegistrationList_1_t748513BBF6769ED01AAD787FF7698EF51EBEF62D;
-// System.Tuple`2<System.Object,System.Double>
-struct Tuple_2_t145ED4E64E49E70749D95145F92851862B5E3BF2;
 // System.Tuple`2<System.Object,System.Object>
 struct Tuple_2_t4B75F18A57363D88671568DEF504983C60E18AC6;
 // System.Tuple`3<System.Object,System.Memory`1<System.Byte>,System.Object>
 struct Tuple_3_t76B18FDDE87BFB452CF969BC16B10789E225FCF6;
+// System.Tuple`3<System.Object,System.Double,UnityEngine.Vector3>
+struct Tuple_3_tA48AC61D4B2ED18CF1EA359277EF61526D6EC69E;
 // System.Tuple`3<System.Object,System.Object,System.Object>
 struct Tuple_3_tA9629AB90A9BD8C1E0490927A977DF122A277ACF;
 // UnityEngine.UIElements.Experimental.ValueAnimation`1<System.Object>
@@ -1261,15 +1261,6 @@ struct List_1_tB88E7361EE76DFB3EBB7FCD60CC59ACC3E48C284  : public RuntimeObject
 	int32_t ____version_3;
 	// System.Object System.Collections.Generic.List`1::_syncRoot
 	RuntimeObject* ____syncRoot_4;
-};
-
-// System.Tuple`2<System.Object,System.Double>
-struct Tuple_2_t145ED4E64E49E70749D95145F92851862B5E3BF2  : public RuntimeObject
-{
-	// T1 System.Tuple`2::m_Item1
-	RuntimeObject* ___m_Item1_0;
-	// T2 System.Tuple`2::m_Item2
-	double ___m_Item2_1;
 };
 
 // System.Tuple`2<System.Object,System.Object>
@@ -6348,6 +6339,17 @@ struct Tuple_3_t76B18FDDE87BFB452CF969BC16B10789E225FCF6  : public RuntimeObject
 	Memory_1_tB7CEF4416F5014E364267478CEF016A4AC5C0036 ___m_Item2_1;
 	// T3 System.Tuple`3::m_Item3
 	RuntimeObject* ___m_Item3_2;
+};
+
+// System.Tuple`3<System.Object,System.Double,UnityEngine.Vector3>
+struct Tuple_3_tA48AC61D4B2ED18CF1EA359277EF61526D6EC69E  : public RuntimeObject
+{
+	// T1 System.Tuple`3::m_Item1
+	RuntimeObject* ___m_Item1_0;
+	// T2 System.Tuple`3::m_Item2
+	double ___m_Item2_1;
+	// T3 System.Tuple`3::m_Item3
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Item3_2;
 };
 
 // UnityEngine.UIElements.Experimental.ValueAnimation`1<UnityEngine.UIElements.Experimental.StyleValues>
@@ -13521,10 +13523,6 @@ struct List_1_tB88E7361EE76DFB3EBB7FCD60CC59ACC3E48C284_StaticFields
 
 // System.Collections.Generic.List`1<System.UInt64>
 
-// System.Tuple`2<System.Object,System.Double>
-
-// System.Tuple`2<System.Object,System.Double>
-
 // System.Tuple`2<System.Object,System.Object>
 
 // System.Tuple`2<System.Object,System.Object>
@@ -14821,6 +14819,10 @@ struct UsingEntry_t0454AD34026FDFD1733CE07BD4AE807B0FBCE484_StaticFields
 // System.Tuple`3<System.Object,System.Memory`1<System.Byte>,System.Object>
 
 // System.Tuple`3<System.Object,System.Memory`1<System.Byte>,System.Object>
+
+// System.Tuple`3<System.Object,System.Double,UnityEngine.Vector3>
+
+// System.Tuple`3<System.Object,System.Double,UnityEngine.Vector3>
 
 // UnityEngine.UIElements.Experimental.ValueAnimation`1<UnityEngine.UIElements.Experimental.StyleValues>
 struct ValueAnimation_1_t639ABF37111B0184CCB3DE2F577E466F04B28FAC_StaticFields
@@ -20259,18 +20261,6 @@ IL_0019:
 		return;
 	}
 }
-// System.Tuple`2<T1,T2> System.Tuple::Create<System.Object,System.Double>(T1,T2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tuple_2_t145ED4E64E49E70749D95145F92851862B5E3BF2* Tuple_Create_TisRuntimeObject_TisDouble_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F_mAAD6F8BEC792E802D0B788D477EE02295FA5413C_gshared (RuntimeObject* ___0_item1, double ___1_item2, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = ___0_item1;
-		double L_1 = ___1_item2;
-		Tuple_2_t145ED4E64E49E70749D95145F92851862B5E3BF2* L_2 = (Tuple_2_t145ED4E64E49E70749D95145F92851862B5E3BF2*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->rgctx_data, 0));
-		NullCheck(L_2);
-		((  void (*) (Tuple_2_t145ED4E64E49E70749D95145F92851862B5E3BF2*, RuntimeObject*, double, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 1)))(L_2, L_0, L_1, il2cpp_rgctx_method(method->rgctx_data, 1));
-		return L_2;
-	}
-}
 // System.Tuple`2<T1,T2> System.Tuple::Create<System.Object,System.Object>(T1,T2)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tuple_2_t4B75F18A57363D88671568DEF504983C60E18AC6* Tuple_Create_TisRuntimeObject_TisRuntimeObject_mB9E45EDC3450763C550051587640A39E730AF094_gshared (RuntimeObject* ___0_item1, RuntimeObject* ___1_item2, const RuntimeMethod* method) 
 {
@@ -20293,6 +20283,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tuple_3_t76B18FDDE87BFB452CF969BC16B10789E225
 		Tuple_3_t76B18FDDE87BFB452CF969BC16B10789E225FCF6* L_3 = (Tuple_3_t76B18FDDE87BFB452CF969BC16B10789E225FCF6*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->rgctx_data, 0));
 		NullCheck(L_3);
 		((  void (*) (Tuple_3_t76B18FDDE87BFB452CF969BC16B10789E225FCF6*, RuntimeObject*, Memory_1_tB7CEF4416F5014E364267478CEF016A4AC5C0036, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 1)))(L_3, L_0, L_1, L_2, il2cpp_rgctx_method(method->rgctx_data, 1));
+		return L_3;
+	}
+}
+// System.Tuple`3<T1,T2,T3> System.Tuple::Create<System.Object,System.Double,UnityEngine.Vector3>(T1,T2,T3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Tuple_3_tA48AC61D4B2ED18CF1EA359277EF61526D6EC69E* Tuple_Create_TisRuntimeObject_TisDouble_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_mC8AB7B77BCDDAB63376A9A7BBB8D2191AD63851A_gshared (RuntimeObject* ___0_item1, double ___1_item2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___2_item3, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = ___0_item1;
+		double L_1 = ___1_item2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___2_item3;
+		Tuple_3_tA48AC61D4B2ED18CF1EA359277EF61526D6EC69E* L_3 = (Tuple_3_tA48AC61D4B2ED18CF1EA359277EF61526D6EC69E*)il2cpp_codegen_object_new(il2cpp_rgctx_data(method->rgctx_data, 0));
+		NullCheck(L_3);
+		((  void (*) (Tuple_3_tA48AC61D4B2ED18CF1EA359277EF61526D6EC69E*, RuntimeObject*, double, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->rgctx_data, 1)))(L_3, L_0, L_1, L_2, il2cpp_rgctx_method(method->rgctx_data, 1));
 		return L_3;
 	}
 }

@@ -2,12 +2,12 @@ using UnityEngine;
 using System.Collections.Generic;
 using System;
 
-public class Player : MonoBehaviour
+public class Player
 {
 	private List<Tuple<GPSData, double, Vector3>>	route = new List<Tuple<GPSData, double, Vector3>>();
 	private double							totalDist = 0;
 	private int								size = 0;
-	private GameObject   					GPSModule = GameObject.Find("GPSModule");
+	private GameObject   					GPSModule;
 
 	public List<Tuple<GPSData, double, Vector3>> getRoute()
 	{
@@ -26,6 +26,8 @@ public class Player : MonoBehaviour
 
 	public void SetPosition()
 	{
+		GPSModule = GameObject.Find("Location Module");
+
 		double latitude = GPSModule.GetComponent<LocationModule>().latitude;
         double longitude = GPSModule.GetComponent<LocationModule>().longitude;
         double altitude = GPSModule.GetComponent<LocationModule>().altitude;        
