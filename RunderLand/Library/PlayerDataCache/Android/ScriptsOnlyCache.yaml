@@ -28,6 +28,12 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     Unity.XR.ARFoundation.dll:
     - UnityEngine.XR.ARFoundation.ARCameraBackground
     - UnityEngine.XR.ARFoundation.ARCameraManager
@@ -75,8 +81,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -103,6 +111,21 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputAction
     - UnityEngine.InputSystem.InputActionMap
     - UnityEngine.InputSystem.InputBinding
+    Unity.TextMeshPro:
+    - TMPro.FaceInfo_Legacy
+    - TMPro.FontAssetCreationSettings
+    - TMPro.KerningTable
+    - TMPro.TMP_Character
+    - TMPro.TMP_FontFeatureTable
+    - TMPro.TMP_FontWeightPair
+    - TMPro.TMP_GlyphAdjustmentRecord
+    - TMPro.TMP_GlyphPairAdjustmentRecord
+    - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_Sprite
+    - TMPro.TMP_SpriteCharacter
+    - TMPro.TMP_SpriteGlyph
+    - TMPro.TMP_Style
+    - TMPro.VertexGradient
     Unity.XR.Interaction.Toolkit:
     - UnityEngine.XR.Interaction.Toolkit.ActivateEvent
     - UnityEngine.XR.Interaction.Toolkit.DeactivateEvent
@@ -120,6 +143,11 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.PersistentListenerMode
     - UnityEngine.Events.UnityEvent
     - UnityEngine.RectOffset
+    UnityEngine.TextCoreFontEngineModule:
+    - UnityEngine.TextCore.FaceInfo
+    - UnityEngine.TextCore.Glyph
+    - UnityEngine.TextCore.GlyphMetrics
+    - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
@@ -201,6 +229,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 64
@@ -240,6 +270,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1960}
     - Class: 114
+      Script: {instanceID: 2596}
+    - Class: 114
       Script: {instanceID: 2788}
     - Class: 114
       Script: {instanceID: 3258}
@@ -264,11 +296,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5130}
     - Class: 114
+      Script: {instanceID: 5492}
+    - Class: 114
+      Script: {instanceID: 5898}
+    - Class: 114
       Script: {instanceID: 6486}
     - Class: 114
       Script: {instanceID: 6844}
     - Class: 114
       Script: {instanceID: 6866}
+    - Class: 114
+      Script: {instanceID: 6972}
     - Class: 114
       Script: {instanceID: 7348}
     - Class: 114
@@ -279,6 +317,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7818}
     - Class: 114
       Script: {instanceID: 7862}
+    - Class: 114
+      Script: {instanceID: 8048}
     - Class: 114
       Script: {instanceID: 8248}
     - Class: 114
@@ -444,7 +484,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 359048156b36c45ce58f42a5d20c4c8d
+      Hash: ae5c9bee62b5326cc8ccc09d75bfc78c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Play
@@ -840,7 +880,7 @@ ScriptsOnlyBuild:
     className: XRControllerManager
   - hash:
       serializedVersion: 2
-      Hash: de70cf07ed07feb7eeebf5ed35de1c18
+      Hash: 04aa63bdbeda6d5bcb1335f0dea64ebf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GPXLogger
@@ -1650,7 +1690,7 @@ ScriptsOnlyBuild:
     className: InputActionManager
   - hash:
       serializedVersion: 2
-      Hash: d66b0e002809404167ab26d3d3dce0a4
+      Hash: 035ee177428d276ba3784c24f4083a17
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LocationModule

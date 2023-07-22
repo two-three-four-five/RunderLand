@@ -12,8 +12,8 @@ public class LocationModule : MonoBehaviour
     public Text latitudeText;
     public Text longitudeText;
     public Text altitudeText;
-    public Text directionText;
-    public Text direction2Text;
+    // public Text directionText;
+    // public Text direction2Text;
     public Vector3 directionVector;
 
     private Vector3 prevPosition;
@@ -97,7 +97,7 @@ public class LocationModule : MonoBehaviour
 
             if (!(dx==0 && dy==0 && dz==0))
                 directionVector = new Vector3(dx, dy, dz);
-            directionText.text = directionVector.ToString();
+            // directionText.text = directionVector.ToString();
             prevPosition = currPosition;
         }
     }

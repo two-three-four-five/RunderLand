@@ -6,7 +6,7 @@ using UnityEngine;
 public class GPXReader : MonoBehaviour
 {
     // File path of the GPX file to read
-    private static string       gpxFilePath = Path.Combine(Application.streamingAssetsPath, "log.gpx");
+    private static string       gpxFilePath = Path.Combine(Application.persistentDataPath, "log.txt");
 
     public static List<GPSData> ReadGPXFile(string filePath)
     {

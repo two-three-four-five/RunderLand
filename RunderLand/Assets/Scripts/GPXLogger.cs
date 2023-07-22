@@ -8,37 +8,42 @@ public class GPXLogger : MonoBehaviour
     // File path of the existing GPX file
     //public string gpxFilePath = Path.Combine(Application.persistentDataPath, "log.gpx");
     private string gpxFilePath;
+    private string fileName = "log1.txt";
 
     // Time interval between each GPS update
     public float updateInterval = 1f;
 
-    // GPSModule to get gps information
-    public GameObject   GPSModule;
+    // LocationModule to get gps information
+    public LocationModule LocationModule;
 
     void Start()
     {
+        LocationModule = GameObject.Find("Location Module").GetComponent<LocationModule>();
         // Continuously log GPS data
-        gpxFilePath = Path.Combine(Application.persistentDataPath, "log.gpx");
+        gpxFilePath = Path.Combine(Application.persistentDataPath, fileName);
+        int suffix = 1;
+        while (System.IO.File.Exists(gpxFilePath))
+        {
+            fileName = $"log{suffix}.txt";
+            gpxFilePath = Path.Combine(Application.persistentDataPath, fileName);
+            suffix++;
+        }
         StartCoroutine(WriteDataToFile());
     }
 
     IEnumerator WriteDataToFile()
     {
+        double latitude = LocationModule.GetComponent<LocationModule>().latitude;
+        double longitude = LocationModule.GetComponent<LocationModule>().longitude;
+        double altitude = LocationModule.GetComponent<LocationModule>().altitude;
+        CreateGPXFile(latitude, longitude, altitude);
+
         while (true)
         {
-            double latitude = GPSModule.GetComponent<LocationModule>().latitude;
-            double longitude = GPSModule.GetComponent<LocationModule>().longitude;
-            double altitude = GPSModule.GetComponent<LocationModule>().altitude;
-
-            // Append track point to GPX file
-            if (!System.IO.File.Exists(gpxFilePath))
-            {
-                CreateGPXFile(latitude, longitude, altitude);
-                Debug.Log("gogogogogogogoggogogogoogogogoggogoogogogogogo");
-            }
-
-            else
-                AppendTrackPointToGPXFile(latitude, longitude, altitude);
+            latitude = LocationModule.GetComponent<LocationModule>().latitude;
+            longitude = LocationModule.GetComponent<LocationModule>().longitude;
+            altitude = LocationModule.GetComponent<LocationModule>().altitude;
+            AppendTrackPointToGPXFile(latitude, longitude, altitude);
             Debug.Log("lolololollololololol");
             yield return new WaitForSeconds(updateInterval);
         }
@@ -71,6 +76,9 @@ public class GPXLogger : MonoBehaviour
 
     private void AppendTrackPointToGPXFile(double latitude, double longitude, double altitude)
     {
+        if (latitude == 0 && longitude == 0 && altitude == 0)
+            return;
+
         XmlDocument doc = new XmlDocument();
         doc.Load(gpxFilePath);
 

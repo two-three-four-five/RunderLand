@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Avatar
 {
+
     private GameObject                      avatar;
     private Camera                          arCamera;
     private GameObject                      locationModule;
@@ -23,6 +24,10 @@ public class Avatar
         locationModule = GameObject.Find("Location Module");
     }
 
+    public double   getDist()
+    {
+        return (avatarTotalDist);
+    }
 
     public Avatar(string filePath)
     {
@@ -43,7 +48,7 @@ public class Avatar
         directionVector = locationModule.GetComponent<LocationModule>().directionVector;
         if (dist_idx >= distanceList.Count)
             return;
-        if (movedDist >= distanceList[dist_idx])
+        while (movedDist >= distanceList[dist_idx])
         {
             movedDist = 0;
             dist_idx++;
@@ -55,6 +60,7 @@ public class Avatar
         }
 
         avatarTotalDist += movePerFrame;
+        movedDist += movePerFrame;
 
         if (avatarTotalDist - playerTotalDist > threshold)
         {           
