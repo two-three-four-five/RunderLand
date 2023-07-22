@@ -6,7 +6,7 @@ using System.Xml;
 public class GPXLogger : MonoBehaviour
 {
     // File path of the existing GPX file
-    public string gpxFilePath = "log.gpx";
+    public string gpxFilePath = Path.Combine(Application.streamingAssetsPath, "log.gpx");
 
     // Time interval between each GPS update
     public float updateInterval = 1f;
@@ -19,10 +19,9 @@ public class GPXLogger : MonoBehaviour
         // Continuously log GPS data
         while (true)
         {
-            double latitude = GPSModule.GetComponent<GPS>().latitude;
-            double longitude = GPSModule.GetComponent<GPS>().longitude;
-            // float altitude = GPSModule.GetComponent<GPS>().altitude;
-            float altitude = 0;
+            double latitude = GPSModule.GetComponent<LocationModule>().latitude;
+            double longitude = GPSModule.GetComponent<LocationModule>().longitude;
+            double altitude = GPSModule.GetComponent<LocationModule>().altitude;            
 
             // Append track point to GPX file
             if (!System.IO.File.Exists(gpxFilePath))
