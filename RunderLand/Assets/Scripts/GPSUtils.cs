@@ -3,14 +3,16 @@ using UnityEngine;
 
 public class GPSUtils
 {
-    public static double CalculateDistance(GPSData p1, GPSData p2)
+    public static double CalculateDistance(in GPSData p1, in GPSData p2)
     {
-        double dx = p2.latitude - p1.latitude;
-        double dy = p2.longitude - p1.longitude;
-        double dz = p2.altitude - p1.altitude;
-
-        double squaredDistance = dx * dx + dy * dy + dz * dz;
-        double distance = Math.Sqrt(squaredDistance);
+        const int R = 6371;     // Earth Radius
+        double dLat = (p2.latitude - p1.latitude) * Math.PI / 180;
+        double dLon = (p2.longitude - p1.longitude) * Math.PI / 180;
+        double a = Math.Sin(dLat / 2) * Math.Sin(dLat / 2) +
+                   Math.Cos(p1.latitude * Math.PI / 180) * Math.Cos(p2.latitude * Math.PI / 180) *
+                   Math.Sin(dLon / 2) * Math.Sin(dLon / 2);
+        double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
+        double distance = R * c * 1000;
 
         return distance;
     }

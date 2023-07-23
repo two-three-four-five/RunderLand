@@ -1,9 +1,11 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Avatar
+    - ControlTower
     - GPXLogger
     - LocationModule
-    - Play
+    - Player
     - Qualcomm.Snapdragon.Spaces.Samples.CubeManipulation
     - Qualcomm.Snapdragon.Spaces.Samples.DynamicOpenXRLoader
     - Qualcomm.Snapdragon.Spaces.Samples.Lifecycle
@@ -81,10 +83,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -256,87 +256,91 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1636}
+      Script: {instanceID: 1666}
     - Class: 114
-      Script: {instanceID: 1638}
+      Script: {instanceID: 1668}
     - Class: 114
-      Script: {instanceID: 1640}
+      Script: {instanceID: 1670}
     - Class: 114
-      Script: {instanceID: 1642}
+      Script: {instanceID: 1672}
     - Class: 114
-      Script: {instanceID: 1644}
+      Script: {instanceID: 1674}
     - Class: 114
-      Script: {instanceID: 1842}
+      Script: {instanceID: 1866}
     - Class: 114
-      Script: {instanceID: 1960}
+      Script: {instanceID: 1984}
     - Class: 114
-      Script: {instanceID: 2596}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2788}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 3258}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 3868}
+      Script: {instanceID: 3894}
     - Class: 114
-      Script: {instanceID: 4220}
-    - Class: 114
-      Script: {instanceID: 4226}
+      Script: {instanceID: 4246}
     - Class: 114
       Script: {instanceID: 4252}
     - Class: 114
-      Script: {instanceID: 4500}
+      Script: {instanceID: 4278}
     - Class: 114
-      Script: {instanceID: 4874}
+      Script: {instanceID: 4400}
     - Class: 114
-      Script: {instanceID: 4898}
+      Script: {instanceID: 4528}
     - Class: 114
-      Script: {instanceID: 4904}
+      Script: {instanceID: 4902}
     - Class: 114
-      Script: {instanceID: 5114}
+      Script: {instanceID: 4926}
     - Class: 114
-      Script: {instanceID: 5130}
+      Script: {instanceID: 4932}
     - Class: 114
-      Script: {instanceID: 5492}
+      Script: {instanceID: 5142}
     - Class: 114
-      Script: {instanceID: 5898}
+      Script: {instanceID: 5158}
     - Class: 114
-      Script: {instanceID: 6486}
+      Script: {instanceID: 5520}
     - Class: 114
-      Script: {instanceID: 6844}
+      Script: {instanceID: 5910}
     - Class: 114
-      Script: {instanceID: 6866}
+      Script: {instanceID: 5926}
     - Class: 114
-      Script: {instanceID: 6972}
+      Script: {instanceID: 6514}
     - Class: 114
-      Script: {instanceID: 7348}
+      Script: {instanceID: 6872}
     - Class: 114
-      Script: {instanceID: 7656}
+      Script: {instanceID: 6894}
     - Class: 114
-      Script: {instanceID: 7662}
+      Script: {instanceID: 7000}
     - Class: 114
-      Script: {instanceID: 7818}
+      Script: {instanceID: 7376}
     - Class: 114
-      Script: {instanceID: 7862}
+      Script: {instanceID: 7684}
     - Class: 114
-      Script: {instanceID: 8048}
+      Script: {instanceID: 7690}
     - Class: 114
-      Script: {instanceID: 8248}
+      Script: {instanceID: 7846}
     - Class: 114
-      Script: {instanceID: 8568}
+      Script: {instanceID: 7890}
     - Class: 114
-      Script: {instanceID: 9012}
+      Script: {instanceID: 8074}
     - Class: 114
-      Script: {instanceID: 9248}
+      Script: {instanceID: 8274}
     - Class: 114
-      Script: {instanceID: 9492}
+      Script: {instanceID: 8594}
     - Class: 114
-      Script: {instanceID: 9806}
+      Script: {instanceID: 9038}
     - Class: 114
-      Script: {instanceID: 10160}
+      Script: {instanceID: 9272}
     - Class: 114
-      Script: {instanceID: 10224}
+      Script: {instanceID: 9516}
     - Class: 114
-      Script: {instanceID: 10240}
+      Script: {instanceID: 9830}
+    - Class: 114
+      Script: {instanceID: 10184}
+    - Class: 114
+      Script: {instanceID: 10248}
+    - Class: 114
+      Script: {instanceID: 10264}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -484,10 +488,10 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: ae5c9bee62b5326cc8ccc09d75bfc78c
+      Hash: ba1eb8c7e6e9a17a6b3730765eefc679
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Play
+    className: ControlTower
   - hash:
       serializedVersion: 2
       Hash: 1f2cec8b8db2240187e9e28372d46fa4
@@ -1000,6 +1004,12 @@ ScriptsOnlyBuild:
     className: UnityOnSelectMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 766d455126128a4a2730b0a53f64ae92
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Avatar
+  - hash:
+      serializedVersion: 2
       Hash: 0da473aa6cb38e900f89f89b2eceeab7
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Rendering
@@ -1360,6 +1370,12 @@ ScriptsOnlyBuild:
     className: ARParticipant
   - hash:
       serializedVersion: 2
+      Hash: 72f3d785bb104b8921afc21d46b9bac9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player
+  - hash:
+      serializedVersion: 2
       Hash: 75de60bccbd35c2e82026d4a60733734
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1690,7 +1706,7 @@ ScriptsOnlyBuild:
     className: InputActionManager
   - hash:
       serializedVersion: 2
-      Hash: 035ee177428d276ba3784c24f4083a17
+      Hash: 12cd2278334197ac9c0b9b802a8515d4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LocationModule
@@ -2531,4 +2547,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/PortraitUISampleScene.unity
-  playerPath: /Users/jinho/Github/RunderLand/RunderLand/Build/RunderLand.apk
+  playerPath: /Users/kjs/Desktop/RunderLand/RunderLand/Build/RunderLand.apk

@@ -15,6 +15,7 @@ public class LocationModule : MonoBehaviour
     // public Text directionText;
     // public Text direction2Text;
     public Vector3 directionVector;
+    public bool isLocationModuleReady = false;
 
     private Vector3 prevPosition;
     private Vector3 currPosition;
@@ -99,6 +100,7 @@ public class LocationModule : MonoBehaviour
                 directionVector = new Vector3(dx, dy, dz);
             // directionText.text = directionVector.ToString();
             prevPosition = currPosition;
+            isLocationModuleReady = true;
         }
     }
 }

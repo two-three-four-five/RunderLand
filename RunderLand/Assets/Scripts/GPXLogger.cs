@@ -6,7 +6,6 @@ using System.Xml;
 public class GPXLogger : MonoBehaviour
 {
     // File path of the existing GPX file
-    //public string gpxFilePath = Path.Combine(Application.persistentDataPath, "log.gpx");
     private string gpxFilePath;
     private string fileName = "log1.txt";
 
@@ -17,8 +16,7 @@ public class GPXLogger : MonoBehaviour
     public LocationModule LocationModule;
 
     void Start()
-    {
-        LocationModule = GameObject.Find("Location Module").GetComponent<LocationModule>();
+    {        
         // Continuously log GPS data
         gpxFilePath = Path.Combine(Application.persistentDataPath, fileName);
         int suffix = 1;
@@ -36,6 +34,7 @@ public class GPXLogger : MonoBehaviour
         double latitude = LocationModule.GetComponent<LocationModule>().latitude;
         double longitude = LocationModule.GetComponent<LocationModule>().longitude;
         double altitude = LocationModule.GetComponent<LocationModule>().altitude;
+
         CreateGPXFile(latitude, longitude, altitude);
 
         while (true)
@@ -44,7 +43,6 @@ public class GPXLogger : MonoBehaviour
             longitude = LocationModule.GetComponent<LocationModule>().longitude;
             altitude = LocationModule.GetComponent<LocationModule>().altitude;
             AppendTrackPointToGPXFile(latitude, longitude, altitude);
-            Debug.Log("lolololollololololol");
             yield return new WaitForSeconds(updateInterval);
         }
     }
@@ -57,9 +55,6 @@ public class GPXLogger : MonoBehaviour
 
         XmlElement trk = doc.CreateElement("trk");
         root.AppendChild(trk);
-
-        //XmlElement trkseg = doc.CreateElement("trkseg");
-        //root.AppendChild(trkseg);
 
         XmlElement trkpt = doc.CreateElement("trkpt");
         trkpt.SetAttribute("lat", latitude.ToString());

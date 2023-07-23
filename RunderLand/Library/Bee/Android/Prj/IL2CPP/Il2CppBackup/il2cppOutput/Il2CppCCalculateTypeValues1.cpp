@@ -704,8 +704,6 @@ struct ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A;
 struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
 // UnityEngine.Experimental.Audio.AudioSampleProvider
 struct AudioSampleProvider_t602353124A2F6F2AEC38E56C3C21932344F712E2;
-// Avatar
-struct Avatar_t5280686025A629043829B8D5A31541F05B328D76;
 // UnityEngine.InputSystem.Controls.AxisControl
 struct AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7;
 // UnityEngine.EventSystems.AxisEventData
@@ -752,6 +750,8 @@ struct CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7;
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 // UnityEngine.XR.ARSubsystems.ConfigurationChooser
 struct ConfigurationChooser_t4DFAB6BE3767C3C5DA0E43FA16CD067009A487C2;
+// ControlTower
+struct ControlTower_t70A83951056A520E49C36620247662BEF18F3303;
 // UnityEngine.Coroutine
 struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
 // System.Security.Cryptography.DSA
@@ -774,6 +774,8 @@ struct Font_tC95270EA3198038970422D78B74A7F2E218A96B6;
 struct FontAsset_t61A6446D934E582651044E33D250EA8D306AB958;
 // UnityEngine.TextCore.Text.FontFeatureTable
 struct FontFeatureTable_t992E0493CD7E9D7834DF204E0198237F0D25B3B7;
+// GPSData
+struct GPSData_tBB589A832F9F8889EF73B821A420BB43DAB74D72;
 // GPXLogger
 struct GPXLogger_tBD6F4337C5398546428F854FB1673BAC0676AF44;
 // UnityEngine.GUIContent
@@ -896,10 +898,6 @@ struct ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1;
 struct PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25;
 // Qualcomm.Snapdragon.Spaces.PlaneDetectionFeature
 struct PlaneDetectionFeature_tF48681CA0AC4444BDD7EDCCAA1989AB8D1CC5A13;
-// Play
-struct Play_tF71FA85D8A3FF02C9EAFDB18E84AC96395139837;
-// Player
-struct Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74;
 // UnityEngine.EventSystems.PointerEventData
 struct PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB;
 // UnityEngine.InputSystem.XR.PoseControl
@@ -2421,19 +2419,6 @@ struct PlaneAlignmentExtensions_t4B5D9C299C467E4CD429F25CEA25479272377445  : pub
 {
 };
 
-// Player
-struct Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74  : public RuntimeObject
-{
-	// System.Collections.Generic.List`1<System.Tuple`3<GPSData,System.Double,UnityEngine.Vector3>> Player::route
-	List_1_t741391690E65192A8747F0541D77F67786B0BA0E* ___route_0;
-	// System.Double Player::totalDist
-	double ___totalDist_1;
-	// System.Int32 Player::size
-	int32_t ___size_2;
-	// UnityEngine.GameObject Player::GPSModule
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___GPSModule_3;
-};
-
 // UnityEngine.SpatialTracking.PoseDataSource
 struct PoseDataSource_tF08072CF4DBA9641E6AE6D1DBA1D421DA9C46858  : public RuntimeObject
 {
@@ -3050,6 +3035,17 @@ struct ModulusRing_t36B2B07F423E7F48C1DED40CAC3603909C4322EF  : public RuntimeOb
 	BigInteger_t890C3F24704442DA2A8C5B3F1E05E1588C7B5F08* ___constant_1;
 };
 
+// ControlTower/<Start>d__6
+struct U3CStartU3Ed__6_tC181BDF57283ABCC32FDA5E7AB94DDAE24158751  : public RuntimeObject
+{
+	// System.Int32 ControlTower/<Start>d__6::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object ControlTower/<Start>d__6::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// ControlTower ControlTower/<Start>d__6::<>4__this
+	ControlTower_t70A83951056A520E49C36620247662BEF18F3303* ___U3CU3E4__this_2;
+};
+
 // Qualcomm.Snapdragon.Spaces.Samples.DynamicOpenXRLoader/<DisplaysCoroutine>d__22
 struct U3CDisplaysCoroutineU3Ed__22_tC2594DE5B7DAA550BA61804972102859617ABF02  : public RuntimeObject
 {
@@ -3169,27 +3165,27 @@ struct Serializer_t16AEC54B6E63D85814C071E746A18E35CFA86737  : public RuntimeObj
 	StringBuilder_t* ___builder_0;
 };
 
-// LocationModule/<InitializeGPS>d__12
-struct U3CInitializeGPSU3Ed__12_tB6924D0B6BFE4CA891AB3776FCDAD48E0FFD29C0  : public RuntimeObject
+// LocationModule/<InitializeGPS>d__13
+struct U3CInitializeGPSU3Ed__13_t0BBEC50C2E25ACEC61067918F8A1B88DC593023D  : public RuntimeObject
 {
-	// System.Int32 LocationModule/<InitializeGPS>d__12::<>1__state
+	// System.Int32 LocationModule/<InitializeGPS>d__13::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object LocationModule/<InitializeGPS>d__12::<>2__current
+	// System.Object LocationModule/<InitializeGPS>d__13::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// LocationModule LocationModule/<InitializeGPS>d__12::<>4__this
+	// LocationModule LocationModule/<InitializeGPS>d__13::<>4__this
 	LocationModule_t4DEA1E49A74057FEFBDBC0DD07807B6BC1E7B169* ___U3CU3E4__this_2;
 };
 
-// LocationModule/<UpdateGPSData>d__13
-struct U3CUpdateGPSDataU3Ed__13_tA0F54E6D3D8935A692DAF1D13A2BA3CF1D730981  : public RuntimeObject
+// LocationModule/<UpdateGPSData>d__14
+struct U3CUpdateGPSDataU3Ed__14_t7F01AC72B1E30AA915955C8D9761A325FF651D87  : public RuntimeObject
 {
-	// System.Int32 LocationModule/<UpdateGPSData>d__13::<>1__state
+	// System.Int32 LocationModule/<UpdateGPSData>d__14::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object LocationModule/<UpdateGPSData>d__13::<>2__current
+	// System.Object LocationModule/<UpdateGPSData>d__14::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// LocationModule LocationModule/<UpdateGPSData>d__13::<>4__this
+	// LocationModule LocationModule/<UpdateGPSData>d__14::<>4__this
 	LocationModule_t4DEA1E49A74057FEFBDBC0DD07807B6BC1E7B169* ___U3CU3E4__this_2;
-	// System.Int32 LocationModule/<UpdateGPSData>d__13::<gps_connect>5__2
+	// System.Int32 LocationModule/<UpdateGPSData>d__14::<gps_connect>5__2
 	int32_t ___U3Cgps_connectU3E5__2_3;
 };
 
@@ -3429,17 +3425,6 @@ struct PrivateKeyInfo_t28A9EE4065B3A3A02D373C6FC28EE45E394D9354  : public Runtim
 // UnityEngine.EventSystems.PhysicsRaycaster/RaycastHitComparer
 struct RaycastHitComparer_t8EF6567C19BE9FB575E01A10941FBF7DE3D3DDF1  : public RuntimeObject
 {
-};
-
-// Play/<Start>d__6
-struct U3CStartU3Ed__6_tBB4CE31887122F56DF9A9B0E93F0E241DA718173  : public RuntimeObject
-{
-	// System.Int32 Play/<Start>d__6::<>1__state
-	int32_t ___U3CU3E1__state_0;
-	// System.Object Play/<Start>d__6::<>2__current
-	RuntimeObject* ___U3CU3E2__current_1;
-	// Play Play/<Start>d__6::<>4__this
-	Play_tF71FA85D8A3FF02C9EAFDB18E84AC96395139837* ___U3CU3E4__this_2;
 };
 
 // Qualcomm.Snapdragon.Spaces.SpacesAnchorStore/LoadAnchorData
@@ -9026,33 +9011,6 @@ struct AuthenticodeDeformatter_tFD4A7B915DB17925F5BD1F9FA169DCF7C2CC81D2  : publ
 	X509Chain_t5B2B343190D10F0CBE48EF822C92F1486E321E21* ___signerChain_20;
 	// Mono.Security.X509.X509Chain Mono.Security.Authenticode.AuthenticodeDeformatter::timestampChain
 	X509Chain_t5B2B343190D10F0CBE48EF822C92F1486E321E21* ___timestampChain_21;
-};
-
-// Avatar
-struct Avatar_t5280686025A629043829B8D5A31541F05B328D76  : public RuntimeObject
-{
-	// UnityEngine.GameObject Avatar::avatar
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___avatar_0;
-	// UnityEngine.Camera Avatar::arCamera
-	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___arCamera_1;
-	// UnityEngine.GameObject Avatar::locationModule
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___locationModule_2;
-	// UnityEngine.Vector3 Avatar::directionVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___directionVector_3;
-	// System.Collections.Generic.List`1<System.Double> Avatar::distanceList
-	List_1_t495F03F47D827883530F951D563C0BB7340E5995* ___distanceList_4;
-	// System.Int32 Avatar::dist_idx
-	int32_t ___dist_idx_5;
-	// System.Int32 Avatar::section
-	int32_t ___section_6;
-	// System.Double Avatar::threshold
-	double ___threshold_7;
-	// System.Double Avatar::movePerFrame
-	double ___movePerFrame_8;
-	// System.Double Avatar::movedDist
-	double ___movedDist_9;
-	// System.Double Avatar::avatarTotalDist
-	double ___avatarTotalDist_10;
 };
 
 // Unity.XR.CoreUtils.BoolUnityEvent
@@ -16898,6 +16856,35 @@ struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299  : public AudioBeha
 {
 };
 
+// Avatar
+struct Avatar_t5280686025A629043829B8D5A31541F05B328D76  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.Camera Avatar::arCamera
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___arCamera_4;
+	// UnityEngine.GameObject Avatar::locationModule
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___locationModule_5;
+	// UnityEngine.GameObject Avatar::playerObj
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___playerObj_6;
+	// UnityEngine.UI.Text Avatar::avatarDistText
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___avatarDistText_7;
+	// UnityEngine.Vector3 Avatar::directionVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___directionVector_8;
+	// System.Collections.Generic.List`1<System.Double> Avatar::distanceList
+	List_1_t495F03F47D827883530F951D563C0BB7340E5995* ___distanceList_9;
+	// System.Int32 Avatar::dist_idx
+	int32_t ___dist_idx_10;
+	// System.Int32 Avatar::section
+	int32_t ___section_11;
+	// System.Double Avatar::threshold
+	double ___threshold_12;
+	// System.Double Avatar::movePerFrame
+	double ___movePerFrame_13;
+	// System.Double Avatar::movedDist
+	double ___movedDist_14;
+	// System.Double Avatar::avatarTotalDist
+	double ___avatarTotalDist_15;
+};
+
 // UnityEngine.Experimental.XR.Interaction.BasePoseProvider
 struct BasePoseProvider_t55E2883DF2C8052200284D64B68471636876FA1D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -16983,6 +16970,23 @@ struct ComponentVersionDisplay_tD3B24667DDAE137988853D073ACBA113D280D849  : publ
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___BuildIdentifierGameObject_9;
 	// UnityEngine.GameObject ComponentVersionDisplay::BuildDateTimeGameObject
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___BuildDateTimeGameObject_10;
+};
+
+// ControlTower
+struct ControlTower_t70A83951056A520E49C36620247662BEF18F3303  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject ControlTower::player
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___player_4;
+	// UnityEngine.GameObject ControlTower::avatar
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___avatar_5;
+	// UnityEngine.GameObject ControlTower::LocationModule
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___LocationModule_6;
+	// UnityEngine.GameObject ControlTower::GPXLogger
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___GPXLogger_7;
+	// UnityEngine.UI.Text ControlTower::Stat
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___Stat_8;
+	// System.Boolean ControlTower::isLocationModuleReady
+	bool ___isLocationModuleReady_9;
 };
 
 // Qualcomm.Snapdragon.Spaces.Samples.CubeManipulation
@@ -17284,12 +17288,14 @@ struct LocationModule_t4DEA1E49A74057FEFBDBC0DD07807B6BC1E7B169  : public MonoBe
 	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___altitudeText_10;
 	// UnityEngine.Vector3 LocationModule::directionVector
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___directionVector_11;
+	// System.Boolean LocationModule::isLocationModuleReady
+	bool ___isLocationModuleReady_12;
 	// UnityEngine.Vector3 LocationModule::prevPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___prevPosition_12;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___prevPosition_13;
 	// UnityEngine.Vector3 LocationModule::currPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___currPosition_13;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___currPosition_14;
 	// UnityEngine.Camera LocationModule::arCamera
-	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___arCamera_14;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___arCamera_15;
 };
 
 // UnityEngine.XR.OpenXR.Features.Interactions.MicrosoftHandInteraction
@@ -17439,21 +17445,21 @@ struct PlaneDetectionFeature_tF48681CA0AC4444BDD7EDCCAA1989AB8D1CC5A13  : public
 	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ____subscribedSubsystems_34;
 };
 
-// Play
-struct Play_tF71FA85D8A3FF02C9EAFDB18E84AC96395139837  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+// Player
+struct Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// Player Play::player
-	Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74* ___player_4;
-	// Avatar Play::avatar
-	Avatar_t5280686025A629043829B8D5A31541F05B328D76* ___avatar_5;
-	// System.Single Play::trackingInterval
-	float ___trackingInterval_6;
-	// UnityEngine.GameObject Play::avatarAsset
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___avatarAsset_7;
-	// UnityEngine.UI.Text Play::avatarDistText
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___avatarDistText_8;
-	// UnityEngine.UI.Text Play::playerDistText
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___playerDistText_9;
+	// System.Collections.Generic.List`1<System.Tuple`3<GPSData,System.Double,UnityEngine.Vector3>> Player::route
+	List_1_t741391690E65192A8747F0541D77F67786B0BA0E* ___route_4;
+	// System.Double Player::totalDist
+	double ___totalDist_5;
+	// System.Int32 Player::size
+	int32_t ___size_6;
+	// GPSData Player::prevGPSData
+	GPSData_tBB589A832F9F8889EF73B821A420BB43DAB74D72* ___prevGPSData_7;
+	// UnityEngine.GameObject Player::LocationModule
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___LocationModule_8;
+	// UnityEngine.UI.Text Player::playertext
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___playertext_9;
 };
 
 // Qualcomm.Snapdragon.Spaces.Samples.SampleController
@@ -19993,10 +19999,6 @@ struct Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94D_StaticFields
 
 // UnityEngine.XR.ARSubsystems.PlaneAlignmentExtensions
 
-// Player
-
-// Player
-
 // UnityEngine.SpatialTracking.PoseDataSource
 struct PoseDataSource_tF08072CF4DBA9641E6AE6D1DBA1D421DA9C46858_StaticFields
 {
@@ -20682,6 +20684,10 @@ struct U3CU3Ec_t9C79F52A91E9CD3F8A739097201CC9F4B848C4B5_StaticFields
 
 // Mono.Math.BigInteger/ModulusRing
 
+// ControlTower/<Start>d__6
+
+// ControlTower/<Start>d__6
+
 // Qualcomm.Snapdragon.Spaces.Samples.DynamicOpenXRLoader/<DisplaysCoroutine>d__22
 
 // Qualcomm.Snapdragon.Spaces.Samples.DynamicOpenXRLoader/<DisplaysCoroutine>d__22
@@ -20775,13 +20781,13 @@ struct Number_t006CBC9914386BB171582F4C3A3EEB2EE404D461_StaticFields
 
 // MiniJSON.Json/Serializer
 
-// LocationModule/<InitializeGPS>d__12
+// LocationModule/<InitializeGPS>d__13
 
-// LocationModule/<InitializeGPS>d__12
+// LocationModule/<InitializeGPS>d__13
 
-// LocationModule/<UpdateGPSData>d__13
+// LocationModule/<UpdateGPSData>d__14
 
-// LocationModule/<UpdateGPSData>d__13
+// LocationModule/<UpdateGPSData>d__14
 
 // NativeToolkit/<Save>d__35
 
@@ -20917,10 +20923,6 @@ struct RaycastHitComparer_t8EF6567C19BE9FB575E01A10941FBF7DE3D3DDF1_StaticFields
 };
 
 // UnityEngine.EventSystems.PhysicsRaycaster/RaycastHitComparer
-
-// Play/<Start>d__6
-
-// Play/<Start>d__6
 
 // Qualcomm.Snapdragon.Spaces.SpacesAnchorStore/LoadAnchorData
 
@@ -22707,10 +22709,6 @@ struct AndroidReflection_tD59014B286F902906DBB75DA3473897D35684908_StaticFields
 // Mono.Security.Authenticode.AuthenticodeDeformatter
 
 // Mono.Security.Authenticode.AuthenticodeDeformatter
-
-// Avatar
-
-// Avatar
 
 // Unity.XR.CoreUtils.BoolUnityEvent
 
@@ -25488,6 +25486,10 @@ struct ARPoseDriver_t443CDE7DCB55B1BA8CCF1E0550F874293019EF16_StaticFields
 
 // UnityEngine.AudioSource
 
+// Avatar
+
+// Avatar
+
 // UnityEngine.Experimental.XR.Interaction.BasePoseProvider
 
 // UnityEngine.Experimental.XR.Interaction.BasePoseProvider
@@ -25534,6 +25536,10 @@ struct CameraAccessFeature_t9FF64BA7FA52FC76B9C811662228676272A305FD_StaticField
 
 // ComponentVersionDisplay
 
+// ControlTower
+
+// ControlTower
+
 // Qualcomm.Snapdragon.Spaces.Samples.CubeManipulation
 
 // Qualcomm.Snapdragon.Spaces.Samples.CubeManipulation
@@ -25567,11 +25573,6 @@ struct CameraAccessFeature_t9FF64BA7FA52FC76B9C811662228676272A305FD_StaticField
 // GPXLogger
 
 // GPXReader
-struct GPXReader_t526850006B0039B893433FBB36E066802BAAB447_StaticFields
-{
-	// System.String GPXReader::gpxFilePath
-	String_t* ___gpxFilePath_4;
-};
 
 // GPXReader
 
@@ -25787,9 +25788,9 @@ struct PlaneDetectionFeature_tF48681CA0AC4444BDD7EDCCAA1989AB8D1CC5A13_StaticFie
 
 // Qualcomm.Snapdragon.Spaces.PlaneDetectionFeature
 
-// Play
+// Player
 
-// Play
+// Player
 
 // Qualcomm.Snapdragon.Spaces.Samples.SampleController
 struct SampleController_t4DC02FF96DD2F6C88C30E0EDC7BFEC65D5DE3D34_StaticFields
@@ -27949,25 +27950,25 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize6146 = { sizeof(ComponentVer
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6147;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6147 = { sizeof(Avatar_t5280686025A629043829B8D5A31541F05B328D76), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6148;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6148 = { sizeof(GPSData_tBB589A832F9F8889EF73B821A420BB43DAB74D72), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6148 = { sizeof(U3CStartU3Ed__6_tC181BDF57283ABCC32FDA5E7AB94DDAE24158751), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6149;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6149 = { sizeof(GPSUtils_tE0DA0C13864E69F6385F3990E2D9967514FD9115), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6149 = { sizeof(ControlTower_t70A83951056A520E49C36620247662BEF18F3303), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6150;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6150 = { sizeof(U3CWriteDataToFileU3Ed__5_tADE7923BA39689A5ED7ECCAB3AC56ED08F7213EF), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6150 = { sizeof(GPSData_tBB589A832F9F8889EF73B821A420BB43DAB74D72), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6151;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6151 = { sizeof(GPXLogger_tBD6F4337C5398546428F854FB1673BAC0676AF44), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6151 = { sizeof(GPSUtils_tE0DA0C13864E69F6385F3990E2D9967514FD9115), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6152;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6152 = { sizeof(GPXReader_t526850006B0039B893433FBB36E066802BAAB447), -1, sizeof(GPXReader_t526850006B0039B893433FBB36E066802BAAB447_StaticFields), 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6152 = { sizeof(U3CWriteDataToFileU3Ed__5_tADE7923BA39689A5ED7ECCAB3AC56ED08F7213EF), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6153;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6153 = { sizeof(U3CInitializeGPSU3Ed__12_tB6924D0B6BFE4CA891AB3776FCDAD48E0FFD29C0), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6153 = { sizeof(GPXLogger_tBD6F4337C5398546428F854FB1673BAC0676AF44), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6154;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6154 = { sizeof(U3CUpdateGPSDataU3Ed__13_tA0F54E6D3D8935A692DAF1D13A2BA3CF1D730981), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6154 = { sizeof(GPXReader_t526850006B0039B893433FBB36E066802BAAB447), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6155;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6155 = { sizeof(LocationModule_t4DEA1E49A74057FEFBDBC0DD07807B6BC1E7B169), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6155 = { sizeof(U3CInitializeGPSU3Ed__13_t0BBEC50C2E25ACEC61067918F8A1B88DC593023D), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6156;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6156 = { sizeof(U3CStartU3Ed__6_tBB4CE31887122F56DF9A9B0E93F0E241DA718173), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6156 = { sizeof(U3CUpdateGPSDataU3Ed__14_t7F01AC72B1E30AA915955C8D9761A325FF651D87), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6157;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize6157 = { sizeof(Play_tF71FA85D8A3FF02C9EAFDB18E84AC96395139837), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize6157 = { sizeof(LocationModule_t4DEA1E49A74057FEFBDBC0DD07807B6BC1E7B169), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6158;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize6158 = { sizeof(Player_tF98BD09D3495D2FF1922E5D34866AEAC6AE2DF74), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize6159;

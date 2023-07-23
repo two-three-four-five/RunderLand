@@ -1,15 +1,18 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using System.Collections;
+using UnityEngine.UI;
 
-public class Player
+public class Player : MonoBehaviour
 {
-	private List<Tuple<GPSData, double, Vector3>>	route = new List<Tuple<GPSData, double, Vector3>>();
-	private double							totalDist = 0;
-	private int								size = 0;
-	private GameObject   					GPSModule;
+	public List<Tuple<GPSData, double, Vector3>>	route = new List<Tuple<GPSData, double, Vector3>>();
+	private double									totalDist = 0;	
+	private GPSData									prevGPSData;
+	public GameObject   							LocationModule;
+	public Text										playertext;
 
-	public List<Tuple<GPSData, double, Vector3>> getRoute()
+    public List<Tuple<GPSData, double, Vector3>> getRoute()
 	{
 		return (route);
 	}
@@ -19,36 +22,29 @@ public class Player
 		return (totalDist);
 	}
 
-	public int getSize()
-    {
-		return (size);
-    }
+    public void Start()
+    {		
+		double latitude = LocationModule.GetComponent<LocationModule>().latitude;
+		double longitude = LocationModule.GetComponent<LocationModule>().longitude;
+		double altitude = LocationModule.GetComponent<LocationModule>().altitude;
 
-	public void SetPosition()
-	{
-		GPSModule = GameObject.Find("Location Module");
-
-		double latitude = GPSModule.GetComponent<LocationModule>().latitude;
-        double longitude = GPSModule.GetComponent<LocationModule>().longitude;
-        double altitude = GPSModule.GetComponent<LocationModule>().altitude;        
-
-        GPSData GPSData = new GPSData(latitude, longitude, altitude);
-		route.Add(Tuple.Create(GPSData, 0d, GPSModule.GetComponent<LocationModule>().directionVector));
+		GPSData GPSData = new GPSData(latitude, longitude, altitude);
+		route.Add(Tuple.Create(GPSData, 0d, LocationModule.GetComponent<LocationModule>().directionVector));
+		prevGPSData = GPSData;
 	}
 
 	public void UpdateLocation()
-    {
-        double latitude = GPSModule.GetComponent<LocationModule>().latitude;
-        double longitude = GPSModule.GetComponent<LocationModule>().longitude;
-        double altitude = GPSModule.GetComponent<LocationModule>().altitude;
+    {				
+		double latitude = LocationModule.GetComponent<LocationModule>().latitude;
+        double longitude = LocationModule.GetComponent<LocationModule>().longitude;
+        double altitude = LocationModule.GetComponent<LocationModule>().altitude;
 
-        GPSData currGPSData = new GPSData(latitude, longitude, altitude);
-		GPSData prevGPSData = route[route.Count - 1].Item1;
-		double	sectionDist = GPSUtils.CalculateDistance(currGPSData, prevGPSData);
-
+		GPSData currGPSData = new GPSData(latitude, longitude, altitude);		
+	
+		double	sectionDist = GPSUtils.CalculateDistance(prevGPSData, currGPSData);		
+		prevGPSData = currGPSData;		
 		totalDist += sectionDist;
-        route.Add(Tuple.Create(currGPSData, totalDist, GPSModule.GetComponent<LocationModule>().directionVector));
-
-		size++;
+        route.Add(Tuple.Create(currGPSData, totalDist, LocationModule.GetComponent<LocationModule>().directionVector));
+		playertext.text = totalDist.ToString(); 
     }
 }

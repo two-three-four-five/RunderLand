@@ -10,4 +10,10 @@ public class GPSData
         this.longitude = longitude;
         this.altitude = altitude;
     }
+
+    public override string ToString()
+    {
+        string str = latitude.ToString() + ", " + longitude.ToString() + ", " + altitude.ToString();
+        return str;
+    }
 }
