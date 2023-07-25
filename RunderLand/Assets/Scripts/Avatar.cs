@@ -70,7 +70,7 @@ public class Avatar : MonoBehaviour
         
         if (avatarTotalDist - playerTotalDist > threshold)
         {           			
-			pos = arCamera.transform.position + directionVector * (float)threshold;       
+			pos = arCamera.transform.position + directionVector * (float)threshold;  
             pos.y -= 1.2f;
             transform.position = pos;
             transform.rotation = Quaternion.LookRotation(directionVector);

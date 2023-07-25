@@ -270,85 +270,85 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1670}
     - Class: 114
-      Script: {instanceID: 1862}
+      Script: {instanceID: 1864}
     - Class: 114
-      Script: {instanceID: 1980}
+      Script: {instanceID: 1982}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 2810}
+      Script: {instanceID: 2812}
     - Class: 114
-      Script: {instanceID: 3280}
+      Script: {instanceID: 3282}
     - Class: 114
-      Script: {instanceID: 3814}
+      Script: {instanceID: 3816}
     - Class: 114
-      Script: {instanceID: 3890}
+      Script: {instanceID: 3892}
     - Class: 114
-      Script: {instanceID: 4242}
+      Script: {instanceID: 4244}
     - Class: 114
-      Script: {instanceID: 4248}
+      Script: {instanceID: 4250}
     - Class: 114
-      Script: {instanceID: 4274}
+      Script: {instanceID: 4276}
     - Class: 114
-      Script: {instanceID: 4396}
+      Script: {instanceID: 4398}
     - Class: 114
-      Script: {instanceID: 4524}
+      Script: {instanceID: 4526}
     - Class: 114
-      Script: {instanceID: 4898}
+      Script: {instanceID: 4900}
     - Class: 114
-      Script: {instanceID: 4922}
+      Script: {instanceID: 4924}
     - Class: 114
-      Script: {instanceID: 4928}
+      Script: {instanceID: 4930}
     - Class: 114
-      Script: {instanceID: 5138}
+      Script: {instanceID: 5140}
     - Class: 114
-      Script: {instanceID: 5154}
+      Script: {instanceID: 5156}
     - Class: 114
-      Script: {instanceID: 5516}
+      Script: {instanceID: 5518}
     - Class: 114
-      Script: {instanceID: 5906}
+      Script: {instanceID: 5908}
     - Class: 114
-      Script: {instanceID: 5922}
+      Script: {instanceID: 5924}
     - Class: 114
-      Script: {instanceID: 6510}
+      Script: {instanceID: 6512}
     - Class: 114
-      Script: {instanceID: 6868}
+      Script: {instanceID: 6870}
     - Class: 114
-      Script: {instanceID: 6890}
+      Script: {instanceID: 6892}
     - Class: 114
-      Script: {instanceID: 6996}
+      Script: {instanceID: 6998}
     - Class: 114
-      Script: {instanceID: 7372}
+      Script: {instanceID: 7374}
     - Class: 114
-      Script: {instanceID: 7680}
+      Script: {instanceID: 7682}
     - Class: 114
-      Script: {instanceID: 7686}
+      Script: {instanceID: 7688}
     - Class: 114
-      Script: {instanceID: 7842}
+      Script: {instanceID: 7844}
     - Class: 114
-      Script: {instanceID: 7886}
+      Script: {instanceID: 7888}
     - Class: 114
-      Script: {instanceID: 8070}
+      Script: {instanceID: 8072}
     - Class: 114
-      Script: {instanceID: 8270}
+      Script: {instanceID: 8272}
     - Class: 114
-      Script: {instanceID: 8590}
+      Script: {instanceID: 8474}
     - Class: 114
-      Script: {instanceID: 9034}
+      Script: {instanceID: 8594}
     - Class: 114
-      Script: {instanceID: 9268}
+      Script: {instanceID: 9038}
     - Class: 114
-      Script: {instanceID: 9512}
+      Script: {instanceID: 9272}
     - Class: 114
-      Script: {instanceID: 9826}
+      Script: {instanceID: 9516}
     - Class: 114
-      Script: {instanceID: 10180}
+      Script: {instanceID: 9830}
     - Class: 114
-      Script: {instanceID: 10244}
+      Script: {instanceID: 10184}
     - Class: 114
-      Script: {instanceID: 10260}
+      Script: {instanceID: 10248}
     - Class: 114
-      Script: {instanceID: 46298}
+      Script: {instanceID: 10264}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1014,7 +1014,7 @@ ScriptsOnlyBuild:
     className: UnityOnSelectMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 19325167ec26d97c1931603122074548
+      Hash: c455dd2f7d765d58a573812f87afcb8f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Avatar
@@ -1716,7 +1716,7 @@ ScriptsOnlyBuild:
     className: InputActionManager
   - hash:
       serializedVersion: 2
-      Hash: 12cd2278334197ac9c0b9b802a8515d4
+      Hash: 74437da3d5a62e5de4457af70a6bfc6f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LocationModule
@@ -1906,6 +1906,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.Interaction.Toolkit.dll
     namespaceName: UnityEngine.XR.Interaction.Toolkit
     className: XRRayInteractor
+  - hash:
+      serializedVersion: 2
+      Hash: 55c786b6b36527ebd3c0f12884aee002
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PointAvatar
   - hash:
       serializedVersion: 2
       Hash: 508a3967ff89b5a765d854990bd45448
@@ -2554,12 +2560,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 55c786b6b36527ebd3c0f12884aee002
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PointAvatar
   platform: 13
   scenePathNames:
   - Assets/Scenes/PortraitUISampleScene.unity

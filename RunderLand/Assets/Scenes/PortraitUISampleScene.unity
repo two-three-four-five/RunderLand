@@ -951,8 +951,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269901306}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.091, z: 1.02}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: 0, y: 0.093, z: 1.268}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1872522471}
@@ -5938,6 +5938,7 @@ MonoBehaviour:
   longitudeText: {fileID: 765483603}
   altitudeText: {fileID: 755154617}
   directionVector: {x: 0, y: 0, z: 0}
+  avatarObj: {fileID: 1620365770}
   isLocationModuleReady: 0
 --- !u!1 &1499171113
 GameObject:
@@ -6234,7 +6235,7 @@ MonoBehaviour:
   playerObj: {fileID: 522225486}
   avatarDistText: {fileID: 971237144}
   thresholdStateText: {fileID: 434351956}
-  pointerText: {fileID: 0}
+  pointerText: {fileID: 400749641}
 --- !u!1 &1649559335
 GameObject:
   m_ObjectHideFlags: 0
@@ -8394,8 +8395,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1660013781}
   m_HandleRect: {fileID: 1660013780}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.5680434
+  m_Value: 1.0000001
+  m_Size: 0.3083543
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

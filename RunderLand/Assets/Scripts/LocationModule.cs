@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 public class LocationModule : MonoBehaviour
 {
@@ -13,9 +14,8 @@ public class LocationModule : MonoBehaviour
     public Text latitudeText;
     public Text longitudeText;
     public Text altitudeText;
-    // public Text directionText;
-    // public Text direction2Text;
     public Vector3 directionVector;
+    public GameObject avatarObj;
     public bool isLocationModuleReady = false;
 
     private Vector3 prevPosition;
@@ -58,7 +58,9 @@ public class LocationModule : MonoBehaviour
         if (Input.location.status == LocationServiceStatus.Running)
         {
             // GPS 데이터 갱신 시작
+            yield return new WaitForSecondsRealtime(5);
             StartCoroutine(UpdateGPSData());
+            StartCoroutine(UpdateDirection());
         }
         else
         {
@@ -67,17 +69,42 @@ public class LocationModule : MonoBehaviour
         }
     }
 
+    IEnumerator UpdateDirection()
+    {
+        LimitedSizeQueue<Vector3> directionVectorList = new LimitedSizeQueue<Vector3>(5);
+        prevPosition = arCamera.transform.position;
+        directionVector = avatarObj.GetComponent<Transform>().position - arCamera.transform.position;
+        directionVector.y = 0;
+        Vector3.Normalize(directionVector);
+        directionVectorList.Enqueue(directionVector);
+
+        while (true)
+        {
+            currPosition = arCamera.transform.position;
+
+            float dx = currPosition.x - prevPosition.x;
+            float dy = currPosition.y - prevPosition.y;
+            float dz = currPosition.z - prevPosition.z;
+            
+            if (Math.Sqrt(Math.Pow(dx, 2) + Math.Pow(dy, 2) + Math.Pow(dz, 2)) > 0.1 && !(dx == 0 && dy == 0 && dz == 0))
+            {
+                directionVectorList.Enqueue(Vector3.Normalize(new Vector3(dx, 0, dz)));
+                directionVector = Vector3.Normalize(directionVectorList.CalculateWeightedAverage());
+            }
+            prevPosition = currPosition;            
+            yield return new WaitForSecondsRealtime(0.1f);
+        }        
+    }
+
+
     IEnumerator UpdateGPSData()
     {
         int gps_connect = 0;
-
-        yield return new WaitForSecondsRealtime(5);
+        
         while (true)
         {
             // GPS 데이터 업데이트 대기
-            yield return new WaitForSeconds(1);
-
-            currPosition = arCamera.transform.position;
+            yield return new WaitForSecondsRealtime(1);            
 
             // 현재 GPS 데이터 가져오기
             LocationInfo currentGPSPosition = Input.location.lastData;
@@ -93,16 +120,7 @@ public class LocationModule : MonoBehaviour
             longitudeText.text = longitude.ToString();
             altitudeText.text = altitude.ToString();
             statusText.text = (Input.location.status == LocationServiceStatus.Running ? "run" : "not run") + gps_connect.ToString();
-
-            // direction update
-            float dx = currPosition.x - prevPosition.x;
-            float dy = currPosition.y - prevPosition.y;
-            float dz = currPosition.z - prevPosition.z;
-
-            if (Math.Sqrt(Math.Pow(dx, 2) + Math.Pow(dy, 2) + Math.Pow(dz, 2)) > 1 && !(dx==0 && dy==0 && dz==0))
-                directionVector = Vector3.Normalize(new Vector3(dx, currPosition.y, dz));
-            // directionText.text = directionVector.ToString();
-            prevPosition = currPosition;
+                     
             isLocationModuleReady = true;
         }
     }

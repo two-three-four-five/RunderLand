@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using System;
@@ -35,6 +34,7 @@ public class Player : MonoBehaviour
 		route.Add(Tuple.Create(GPSData, 0d, LocationModule.GetComponent<LocationModule>().directionVector));
 		prevGPSData = GPSData;
 		StartCoroutine(UpdateLocation());
+		// Update Dist;
 		size++;
 	}
 
@@ -59,9 +59,9 @@ public class Player : MonoBehaviour
 					continue;
 				else
                 {
-					latitude = route[size - 1].Item1.latitude + route[size - 1].Item1.latitude - route[size - 2].Item1.latitude;
-					longitude = route[size - 1].Item1.longitude + route[size - 1].Item1.longitude - route[size - 2].Item1.longitude;
-					altitude = route[size - 1].Item1.altitude + route[size - 1].Item1.altitude - route[size - 2].Item1.altitude;
+					latitude = route[size - 1].Item1.latitude + (route[size - 1].Item1.latitude - route[size - 2].Item1.latitude);
+					longitude = route[size - 1].Item1.longitude + (route[size - 1].Item1.longitude - route[size - 2].Item1.longitude);
+					altitude = route[size - 1].Item1.altitude + (route[size - 1].Item1.altitude - route[size - 2].Item1.altitude);
 					currGPSData.latitude = latitude;
 					currGPSData.longitude = longitude;
 					currGPSData.altitude = altitude;
