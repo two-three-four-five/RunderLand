@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using System.IO;
+using TMPro;
 
 public class ControlTower : MonoBehaviour
 {
@@ -9,7 +9,7 @@ public class ControlTower : MonoBehaviour
     public GameObject   avatar;
     public GameObject   LocationModule;
     public GameObject   GPXLogger;
-    public Text         Stat;
+    public TMP_Text     Stat;
     private bool        isLocationModuleReady = false;
 
     IEnumerator Start()
@@ -17,10 +17,10 @@ public class ControlTower : MonoBehaviour
         while (true)
         {
             isLocationModuleReady = LocationModule.GetComponent<LocationModule>().isLocationModuleReady;
-            Stat.text = "oh no";
+            Stat.text = "Warming Up~";
             if (isLocationModuleReady)
             {
-                Stat.text = "oh yes";
+                //Stat.text = "oh yes";
                 player.GetComponent<Player>().enabled = true;
                 avatar.GetComponent<Avatar>().enabled = true;
                 GPXLogger.GetComponent<GPXLogger>().enabled = true;

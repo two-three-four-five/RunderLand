@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class GPSUtils
 {
+    private static float metersPerLat;
+    private static float metersPerLon;
+
     public static double CalculateDistance(in GPSData p1, in GPSData p2)
     {
         const int R = 6371;     // Earth Radius
@@ -28,21 +31,37 @@ public class GPSUtils
         return degreeAngle;
     }
 
-    public static Vector3 GPSToUnity(GPSData gpsData, Vector3 referenceUnity)
-    {
-        Vector3 gpsVector = new Vector3((float)gpsData.longitude, (float)gpsData.latitude, (float)gpsData.altitude);
-
-        // Calculate the offset between reference GPS and reference Unity
-        Vector3 offset = gpsVector - gpsVector;
-
+    public static Vector3 GPSToUnity(GPSData playerGPS, GPSData avatarGPS, Vector3 referencePosition)
+    {     
+        Vector3 offset = new Vector3((float)(playerGPS.longitude - avatarGPS.longitude),
+                                (float)(playerGPS.latitude - avatarGPS.latitude),
+                                (float)(playerGPS.altitude - avatarGPS.altitude));
+        FindMetersPerLat((float)avatarGPS.latitude);
         // Convert latitude and longitude to meters (assuming 1 unit = 1 meter)
-        float latitudeMeters = offset.x * 111111f;
-        float longitudeMeters = offset.y * 111111f * Mathf.Cos(gpsVector.x * Mathf.Deg2Rad);
+        float latitudeMeters = offset.x * metersPerLat;
+        float longitudeMeters = offset.y * metersPerLon;
         float altitudeMeters = offset.z;
 
         // Apply the offset to the reference Unity coordinates
-        Vector3 unityPosition = referenceUnity + new Vector3(longitudeMeters, altitudeMeters, latitudeMeters);      
+        Vector3 unityPosition = referencePosition + new Vector3(longitudeMeters, altitudeMeters, latitudeMeters);      
 
         return unityPosition;
+    }
+
+    private static void FindMetersPerLat(float lat) // Compute lengths of degrees
+    {
+        float m1 = 111132.92f;    // latitude calculation term 1
+        float m2 = -559.82f;        // latitude calculation term 2
+        float m3 = 1.175f;      // latitude calculation term 3
+        float m4 = -0.0023f;        // latitude calculation term 4
+        float p1 = 111412.84f;    // longitude calculation term 1
+        float p2 = -93.5f;      // longitude calculation term 2
+        float p3 = 0.118f;      // longitude calculation term 3
+
+        lat = lat * Mathf.Deg2Rad;
+
+        // Calculate the length of a degree of latitude and longitude in meters
+        metersPerLat = m1 + (m2 * Mathf.Cos(2 * (float)lat)) + (m3 * Mathf.Cos(4 * (float)lat)) + (m4 * Mathf.Cos(6 * (float)lat));
+        metersPerLon = (p1 * Mathf.Cos((float)lat)) + (p2 * Mathf.Cos(3 * (float)lat)) + (p3 * Mathf.Cos(5 * (float)lat));
     }
 }

@@ -8,6 +8,7 @@ public class LocationModule : MonoBehaviour
     public double latitude;
     public double longitude;
     public double altitude;
+    
     public Text statusText;
     public Text latitudeText;
     public Text longitudeText;
@@ -26,7 +27,7 @@ public class LocationModule : MonoBehaviour
         arCamera = GameObject.Find("AR Camera").GetComponent<Camera>();
 
         // 위치 서비스 초기화
-        Input.location.Start();
+        Input.location.Start(0.1f, 0.1f);
         altitudeText.text = NativeToolkit.StartLocation() ? "true" : "false";
         directionVector = new Vector3(0, 0, 0);
 
@@ -69,6 +70,8 @@ public class LocationModule : MonoBehaviour
     IEnumerator UpdateGPSData()
     {
         int gps_connect = 0;
+
+        yield return new WaitForSecondsRealtime(5);
         while (true)
         {
             // GPS 데이터 업데이트 대기
@@ -96,8 +99,8 @@ public class LocationModule : MonoBehaviour
             float dy = currPosition.y - prevPosition.y;
             float dz = currPosition.z - prevPosition.z;
 
-            if (!(dx==0 && dy==0 && dz==0))
-                directionVector = new Vector3(dx, dy, dz);
+            if (Math.Sqrt(Math.Pow(dx, 2) + Math.Pow(dy, 2) + Math.Pow(dz, 2)) > 1 && !(dx==0 && dy==0 && dz==0))
+                directionVector = Vector3.Normalize(new Vector3(dx, currPosition.y, dz));
             // directionText.text = directionVector.ToString();
             prevPosition = currPosition;
             isLocationModuleReady = true;

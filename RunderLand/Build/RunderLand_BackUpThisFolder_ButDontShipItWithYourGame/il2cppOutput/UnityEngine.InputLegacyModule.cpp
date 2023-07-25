@@ -936,8 +936,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_SetDesiredAccuracy_m6F69
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_SetDistanceFilter_m847B85271A56F9291337C79E6C80012F2BD6C1AE (float ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.LocationService::StartUpdatingLocation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_StartUpdatingLocation_m93789B3CDDF62EBD26326127DEC65C6C94123D29 (const RuntimeMethod* method) ;
-// System.Void UnityEngine.LocationService::Start(System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_Start_m5076FE201E96C086B0F9C2D8677DA69C98099F3D (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, float ___0_desiredAccuracyInMeters, float ___1_updateDistanceInMeters, const RuntimeMethod* method) ;
 // System.Void UnityEngine.LocationService::StopUpdatingLocation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_StopUpdatingLocation_mB063A5546139211C3796E0422365829ABBB26C20 (const RuntimeMethod* method) ;
 // UnityEngine.GameObject UnityEngine.CameraRaycastHelper::RaycastTry_Injected(UnityEngine.Camera,UnityEngine.Ray&,System.Single,System.Int32)
@@ -1809,14 +1807,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_Start_m5076FE201E96C086B
 		float L_1 = ___1_updateDistanceInMeters;
 		LocationService_SetDistanceFilter_m847B85271A56F9291337C79E6C80012F2BD6C1AE(L_1, NULL);
 		LocationService_StartUpdatingLocation_m93789B3CDDF62EBD26326127DEC65C6C94123D29(NULL);
-		return;
-	}
-}
-// System.Void UnityEngine.LocationService::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocationService_Start_mC2A90619923D4BEB5F9B5CCD95F317B98D67AF3A (LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* __this, const RuntimeMethod* method) 
-{
-	{
-		LocationService_Start_m5076FE201E96C086B0F9C2D8677DA69C98099F3D(__this, (10.0f), (10.0f), NULL);
 		return;
 	}
 }
